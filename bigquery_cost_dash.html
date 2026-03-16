@@ -930,31 +930,31 @@ document.querySelector('button[onclick]').onclick = () => location.reload();
 
 // Data embedded at build time — no external fetch needed
 D = {
-  "generated_at": "2026-03-13T05:25:18.170803Z",
+  "generated_at": "2026-03-16T05:40:48.721260Z",
   "latest_month": "2026-03",
   "prev_month": "2026-02",
-  "total_cost": 442.7988,
+  "total_cost": 559.2065,
   "prev_total_cost": 1350.4037,
-  "mom_change_pct": -67.2,
+  "mom_change_pct": -58.6,
   "top_driver_name": "prod-prj-etl@radixbi-249015.iam.gserviceaccount.com",
-  "top_driver_cost": 126.4728,
-  "spike_driver_name": "prod-prj-n8n@radixbi-249015.iam.gserviceaccount.com",
-  "spike_driver_cost": 0.5487,
-  "high_risk_count": 5,
-  "savings_estimate": 5094.6587,
+  "top_driver_cost": 156.726,
+  "spike_driver_name": "avaneesh@radix.email",
+  "spike_driver_cost": 1.4039,
+  "high_risk_count": 6,
+  "savings_estimate": 5055.9273,
   "sa_share_pct": 72.0,
-  "concentration_pct": 65.3,
+  "concentration_pct": 64.4,
   "insights": [
-    "BigQuery spend reached $442.80 in 2026-03, down 67% from the previous month.",
-    "Top 3 identities contributed 65% of monthly BigQuery spend.",
-    "prod-prj-n8n@radixbi-249015.iam.gserviceaccount.com was the largest spike contributor with +$0.55 MoM increase.",
+    "BigQuery spend reached $559.21 in 2026-03, down 59% from the previous month.",
+    "Top 3 identities contributed 64% of monthly BigQuery spend.",
+    "avaneesh@radix.email was the largest spike contributor with +$1.40 MoM increase.",
     "One repeated query pattern ran 116 times, costing $584.25 in 2026-03.",
     "Service accounts drive 72% of spend \u2014 optimization focus should shift to pipeline workloads."
   ],
   "monthly_trend": [
     {
       "month": "2025-12",
-      "total_cost": 1410.7129
+      "total_cost": 1260.9882
     },
     {
       "month": "2026-01",
@@ -966,7 +966,7 @@ D = {
     },
     {
       "month": "2026-03",
-      "total_cost": 442.7988
+      "total_cost": 559.2065
     }
   ],
   "top_identities": [
@@ -975,24 +975,48 @@ D = {
       "display_name": "prod-prj-etl@radixbi-249015.iam.gserviceaccount.com",
       "team": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 126.4728,
-      "query_count": 12865,
-      "cost_per_query": 0.0098,
-      "costly_queries": 13,
-      "mom_delta": -150.2259,
-      "mom_pct": -54.3
+      "total_cost": 156.726,
+      "query_count": 15858,
+      "cost_per_query": 0.0099,
+      "costly_queries": 16,
+      "mom_delta": -119.9727,
+      "mom_pct": -43.4
     },
     {
       "email": "bi-team@radix.email",
       "display_name": "bi-team@radix.email",
       "team": "Unknown",
       "identity_type": "human",
-      "total_cost": 80.3595,
-      "query_count": 31907,
+      "total_cost": 100.4054,
+      "query_count": 39955,
       "cost_per_query": 0.0025,
       "costly_queries": 0,
-      "mom_delta": -134.1274,
-      "mom_pct": -62.5
+      "mom_delta": -114.0815,
+      "mom_pct": -53.2
+    },
+    {
+      "email": "prod-prj-premium@radixbi-249015.iam.gserviceaccount.com",
+      "display_name": "prod-prj-premium@radixbi-249015.iam.gserviceaccount.com",
+      "team": "Unknown",
+      "identity_type": "service_account",
+      "total_cost": 37.3732,
+      "query_count": 119484,
+      "cost_per_query": 0.0003,
+      "costly_queries": 0,
+      "mom_delta": -28.8975,
+      "mom_pct": -43.6
+    },
+    {
+      "email": "newreg-npv-sa@radixbi-249015.iam.gserviceaccount.com",
+      "display_name": "newreg-npv-sa@radixbi-249015.iam.gserviceaccount.com",
+      "team": "Unknown",
+      "identity_type": "service_account",
+      "total_cost": 33.805,
+      "query_count": 4498,
+      "cost_per_query": 0.0075,
+      "costly_queries": 0,
+      "mom_delta": -147.023,
+      "mom_pct": -81.3
     },
     {
       "email": "gd-optimizer-sa@radixbi-249015.iam.gserviceaccount.com",
@@ -1007,101 +1031,99 @@ D = {
       "mom_pct": -79.5
     },
     {
-      "email": "prod-prj-premium@radixbi-249015.iam.gserviceaccount.com",
-      "display_name": "prod-prj-premium@radixbi-249015.iam.gserviceaccount.com",
-      "team": "Unknown",
-      "identity_type": "service_account",
-      "total_cost": 29.925,
-      "query_count": 94849,
-      "cost_per_query": 0.0003,
-      "costly_queries": 0,
-      "mom_delta": -36.3457,
-      "mom_pct": -54.8
-    },
-    {
-      "email": "newreg-npv-sa@radixbi-249015.iam.gserviceaccount.com",
-      "display_name": "newreg-npv-sa@radixbi-249015.iam.gserviceaccount.com",
-      "team": "Unknown",
-      "identity_type": "service_account",
-      "total_cost": 20.5608,
-      "query_count": 3865,
-      "cost_per_query": 0.0053,
-      "costly_queries": 0,
-      "mom_delta": -160.2672,
-      "mom_pct": -88.6
-    },
-    {
       "email": "shivanshu@radix.email",
       "display_name": "shivanshu@radix.email",
       "team": "Unknown",
       "identity_type": "human",
-      "total_cost": 17.0115,
-      "query_count": 3125,
-      "cost_per_query": 0.0054,
+      "total_cost": 20.7464,
+      "query_count": 3912,
+      "cost_per_query": 0.0053,
       "costly_queries": 0,
-      "mom_delta": -35.1354,
-      "mom_pct": -67.4
+      "mom_delta": -31.4005,
+      "mom_pct": -60.2
     },
     {
       "email": "655967812175-compute@developer.gserviceaccount.com",
       "display_name": "655967812175-compute@developer.gserviceaccount.com",
       "team": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 14.8136,
-      "query_count": 7754,
+      "total_cost": 18.6981,
+      "query_count": 9771,
       "cost_per_query": 0.0019,
       "costly_queries": 0,
-      "mom_delta": -15.2783,
-      "mom_pct": -50.8
+      "mom_delta": -11.3938,
+      "mom_pct": -37.9
     },
     {
       "email": "tableau-service-creds-shiv@radixbi-249015.iam.gserviceaccount.com",
       "display_name": "tableau-service-creds-shiv@radixbi-249015.iam.gserviceaccount.com",
       "team": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 14.327,
-      "query_count": 237,
-      "cost_per_query": 0.0605,
+      "total_cost": 17.7445,
+      "query_count": 252,
+      "cost_per_query": 0.0704,
       "costly_queries": 0,
-      "mom_delta": -30.8714,
-      "mom_pct": -68.3
+      "mom_delta": -27.4539,
+      "mom_pct": -60.7
     },
     {
       "email": "bi-data-integrity@radixbi-249015.iam.gserviceaccount.com",
       "display_name": "bi-data-integrity@radixbi-249015.iam.gserviceaccount.com",
       "team": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 12.1389,
-      "query_count": 2875,
+      "total_cost": 15.1764,
+      "query_count": 3603,
       "cost_per_query": 0.0042,
       "costly_queries": 0,
-      "mom_delta": -15.4092,
-      "mom_pct": -55.9
+      "mom_delta": -12.3717,
+      "mom_pct": -44.9
     },
     {
       "email": "shradhanand@radix.email",
       "display_name": "shradhanand@radix.email",
       "team": "Unknown",
       "identity_type": "human",
-      "total_cost": 10.2965,
-      "query_count": 1437,
-      "cost_per_query": 0.0072,
+      "total_cost": 12.8386,
+      "query_count": 1766,
+      "cost_per_query": 0.0073,
       "costly_queries": 0,
-      "mom_delta": -13.0161,
-      "mom_pct": -55.8
+      "mom_delta": -10.474,
+      "mom_pct": -44.9
     }
   ],
   "top_spikes": [
+    {
+      "email": "avaneesh@radix.email",
+      "display_name": "avaneesh@radix.email",
+      "team": "Unknown",
+      "identity_type": "human",
+      "cur_cost": 7.5374,
+      "prev_cost": 6.1335,
+      "mom_delta": 1.4039,
+      "mom_pct": 22.9,
+      "spike_contrib_pct": 49.6
+    },
     {
       "email": "prod-prj-n8n@radixbi-249015.iam.gserviceaccount.com",
       "display_name": "prod-prj-n8n@radixbi-249015.iam.gserviceaccount.com",
       "team": "Unknown",
       "identity_type": "service_account",
-      "cur_cost": 0.5601,
+      "cur_cost": 0.9039,
       "prev_cost": 0.0114,
-      "mom_delta": 0.5487,
-      "mom_pct": 4813.2,
-      "spike_contrib_pct": 57.0
+      "mom_delta": 0.8925,
+      "mom_pct": 7828.9,
+      "spike_contrib_pct": 31.6
+    },
+    {
+      "email": "prod-prj-serp@radixbi-249015.iam.gserviceaccount.com",
+      "display_name": "prod-prj-serp@radixbi-249015.iam.gserviceaccount.com",
+      "team": "Unknown",
+      "identity_type": "service_account",
+      "cur_cost": 0.5409,
+      "prev_cost": 0.3069,
+      "mom_delta": 0.234,
+      "mom_pct": 76.2,
+      "spike_contrib_pct": 8.3
     },
     {
       "email": "prod-prj-store-lead@radixbi-249015.iam.gserviceaccount.com",
@@ -1112,7 +1134,7 @@ D = {
       "prev_cost": 0.1685,
       "mom_delta": 0.1536,
       "mom_pct": 91.2,
-      "spike_contrib_pct": 16.0
+      "spike_contrib_pct": 5.4
     },
     {
       "email": "sohamgi@radix.email",
@@ -1123,18 +1145,7 @@ D = {
       "prev_cost": 0.0021,
       "mom_delta": 0.1437,
       "mom_pct": 6842.9,
-      "spike_contrib_pct": 14.9
-    },
-    {
-      "email": "prod-prj-serp@radixbi-249015.iam.gserviceaccount.com",
-      "display_name": "prod-prj-serp@radixbi-249015.iam.gserviceaccount.com",
-      "team": "Unknown",
-      "identity_type": "service_account",
-      "cur_cost": 0.423,
-      "prev_cost": 0.3069,
-      "mom_delta": 0.1161,
-      "mom_pct": 37.8,
-      "spike_contrib_pct": 12.1
+      "spike_contrib_pct": 5.1
     },
     {
       "email": "prd-prj-dcs-spike@radixbi-249015.iam.gserviceaccount.com",
@@ -1190,24 +1201,13 @@ D = {
       "mom_delta": 0.0,
       "mom_pct": 0.0,
       "spike_contrib_pct": 0.0
-    },
-    {
-      "email": "firebase-measurement@system.gserviceaccount.com",
-      "display_name": "firebase-measurement@system.gserviceaccount.com",
-      "team": "Unknown",
-      "identity_type": "service_account",
-      "cur_cost": 0.0,
-      "prev_cost": 0.0,
-      "mom_delta": 0.0,
-      "mom_pct": 0.0,
-      "spike_contrib_pct": 0.0
     }
   ],
   "top_queries": [
     {
       "hash": "c76a3f651241",
       "query_preview": "SELECT\n            DATE(date) AS check_date,LOWER(registrar_shortname) as registrar_shortname, sld, count(sld) as check_",
-      "full_query": "SELECT\n            DATE(date) AS check_date,LOWER(registrar_shortname) as registrar_shortname, sld, count(sld) as check_availability\n            FROM registry_logs.registrylogs_list WHERE type = 'check' AND registrar_shortname is not null\n            AND DATE(date) >= DATE_ADD(CURRENT_DATE, INTERVAL -2 year) \n            and sld in ('lustre','gases','sterna','supermom','drina','drina','thrasher','etude','durra','modular','anasa','georgina','georgina','swahili','silvanus','rafter','sollie','marten','marten','dukas','enola','shocker','flaky','libby','libby','libby','pansy','binger','manor','artful','courage','twine','slacker','roussel','emin','capers','tension','tension','tension','tension','recto','moneta','tamer','sandhya','lamoureux','bringer','gunther','blesser','velma','hartnell','bhakta','hasty','guanaco','ansar','buber','habib','solfa','gottfried','muslimah','0554','felon','felon','matilda','matilda','grower','phobia','heroine','heroine','castaway','castaway','castaway','castaway','leary','hillel','alisa','alisa','merle','tibetan','fried','stiletto','stratton','verso','felipe','waldheim','generous','aviso','ouranos','magus','athenian','lennon','tarantino','alfredo','limber','limber','stringer','modell','ibrahim','bruant','manifest','hornet','cellini','cellini','hammy','mushy','orfeo','aryan','justa','spear','wrangler','wrangler','morini','tringa','wiggin','collie','collie','larine','algerian','nansen','leaky','parti','hausen','hanafi','fandango','idealist','thill','quark','graph','damage','ernesto','ernesto','reeda','edward','edward','carisa','title','picaro','picaro','attire','asking','minta','determined','prune','sinis','stans','synth','synth','dante','permanent','permanent','permanent','childe','chantal','lovemaking','canna','rupee','emilie','hacienda','ciudad','zowie','bernhard','scholastic','banger','souter','lucien','lucien','hajji','lames','eugen','monal','wiring','oriente','leady','baseman','artel','artel','sentimental','khayyam','rough','rough','loris','loris','maltese','nicodemus','nicodemus','wheeler','wheeler','0737','curly','trixie','trixie','lough','purga','illuminati','illuminati','0776','plywood','buisson','verdin','caccia','primus','overtrade','follow','latvian','langdon','yvette','yvette','grinnell','fractal','towel','wharf','werner','ramsden','debby','dolor','momot','jovial','popov','talos','talos','spunky','potrero','tansy','folie','shaded','plana','kadai','belinda','belinda','belinda','sheila','sheila','tankie','outlaw','outlaw','damocles','drizzle','gelly','bannister','bannister','pansa','steno','steno','addition','addition','marcus','chinan','partes','chain','upholstery','dalia','velasquez','foursquare','foursquare','delacroix','fortis','denim','mentha','strap','strap','strap','stray','karoo','wesker','goffer','sorrel','cinnamon','steffens','amiga','godiva','cooley','candice','candice','screen','turkmen','borsch','biomedical','memnon','oates','skylab','shaggy','tinker','tinker','lucre','graffiti','sheikh','sheikh','ferryman','michal','michal','michal','amiable','renting','hilda','hilda','marsha','genit','grotto','cavendish','flipper','flipper','marvella','alamode','georgette','lagoon','lagoon','ither','fabian','fabian','fabian','chapman','gourmand','chive','swiftie','perfumer','joiner','deacon','jessy','bernardo','bernardo','bernardo','lucile','melodia','cummings','panjabi','acacia','pichi','pietro','yarrow','helsa','missing','missing','riven','riven','loveable','dolce','abies','abies','jeffers','alethea','britt','britt','britt','ginger','monad','gomes','simsim','matilde','sooty','jacqueline','louis','johanna','johanna','johanna','xavier','xavier','decade','cisco','cassini','duster','duster','duper','bonanza','bonanza','bestial','steal','marksman','fibiger','lazaro','feria','alien','easterly','prajapati','ducks','boucle','boucle','fatso','kondo','melie','immortal','immortal','wacky','arbour','steeve','infin','anger','paige','rubel','dully','hurry','maleo','leaper','ironside','voter','damon','advaita','paddy','paddy','valora','northman','cullen','cullen','dolph','brans','dolph','silva','camila','ledbetter','textile','alibi','folio','folio','acidic','popple','korda','ginzo','hennin','quint','sorra','faraday','mattie','changer','0919','cavil','brushy','marvel','chron','pursuit','pursuit','pursuit','hydroponic','mosque','melia','melia','lazzaro','tammie','comber','claro','marut','waterfall','waterfall','benedict','benedict','daryl','daryl','steamboat','royalty','ariki','hosea','munshi','mabelle','hollingshead','grift','damocles','edouard','frankie','frankie','dolby','toran','dominic','remus','picker','rafel','lurch','mathilde','later','batik','batik','bendel','quail','smart','egest','adina','blanky','della','della','pentland','pentland','swiftie','harlen','charry','shaker','stull','sprayer','carpentry','joselyn','rapper','mordy','prediction','prediction','prediction','nicole','nicole','browny','browny','browny','stephen','stephen','prokhorov','borsh','schneider') group by 1,2,3",
+      "full_query": "SELECT\n            DATE(date) AS check_date,LOWER(registrar_shortname) as registrar_shortname, sld, count(sld) as check_availability\n            FROM registry_logs.registrylogs_list WHERE type = 'check' AND registrar_shortname is not null\n            AND DATE(date) >= DATE_ADD(CURRENT_DATE, INTERVAL -2 year) \n            and sld in ('perpetua','perpetua','solace','haste','blanche','blanche','blanche','jethro','belong','vandyke','sphinx','bunton','falanga','brill','markov','therese','messy','trudeau','molnar','molnar','waddle','eigen','wider','psych','jeanette','acceptance','likeness','etoile','etoile','juliette','tripe','kettle','kettle','kettle','freeman','migrant','giacomo','laster','guarneri','cezanne','squiz','maryann','savant','freer','permission','permission','christie','cheque','helper','seraphim','winsor','folia','forevermore','forevermore','hobbes','mulligan','leonora','kadar','ducat','sunna','hephzibah','designed','designed','designed','husain','husain','husain','trucking','bulgur','bulgur','manley','mailman','decency','playmaker','teriyaki','tunic','dharma','dharma','helix','climber','climber','climber','stain','jeanne','haim','elijah','aisha','aisha','aisha','musette','hayley','holliday','grader','grader','joyce','cecilia','cecilia','cecilia','parlour','parlour','parlour','malie','bushy','castor','alfie','herder','hawking','fitch','patty','manzanita','goldsmith','showers','angular','argus','melnyk','caesar','caesar','caesar','pound','leandro','nimrod','lawless','barbaric','barbaric','hurdle','unfazed','redone','deliver','deliver','deliver','tania','tania','tania','handel','handel','quintal','physique','intruder','intruder','pinus','elvira','vassal','elvira','balestra','redbird','avian','0887','flakey','lenard','nephew','manpower','manpower','khaya','jingle','ruben','ruben','crowe','konig','loretta','perrin','grief','terminator','florine','projet','projet','salesman','salesman','maill','eminent','0350','splendor','sakharov','straw','bourgeois','vespucci','vespucci','tobit','styling','styling','still','privet','giuseppe','giuseppe','cheka','tingling','beaux','purpura','terminal','polly','polly','bitis','whetstone','cardia','cotter','telly','groot','apart','brave','crichton','fashioner','unger','karol','incarnate','faller','giulio','giulio','dobber','cheri','obelisk','obelisk','obelisk','dacha','ocelot','ocelot','ocelot','pinel','leblanc','harness','rubbish','dacha','dacha','carola','caritas','caritas','adeline','spent','louise','louise','upper','upper','upper','carina','scorer','savor','gregor','salah','algar','tachi','kirch','croon','vince','logger','logger','calabash','geisha','geisha','dorothy','promised','locket','finca','lumina','bulgar','bulgar','regan','regan','ravin','gretta','farrell','rondo','rondo','lenox','0779','shard','gulliver','letitia','dusty','byrne','filippo','petunia','mandel','peridot','peridot','smock','pasha','cheongsam','storey','abyss','prominent','arthritis','arthritis','arthritis','farrier','gibus','sultana','rosse','duckie','galax','galax','dingo','among','liked','steep','mahalia','consultancy','shield','shogun','shogun','shogun','caption','caption','senora','renault','giusto','kelvin','stump','balsa','gertie','windmill','leonard','laney','telega','esteem','chaga','hally','narrow','lovelock','regale','swastika','primrose','peoples','trone','saner','settle','genre','mestizo','complete','complete','luella','rabbi','rabbi','loser','phanos','bitte','sharif','sharif','alannah','hawker','scrimshaw','cohen','cohen','pompey','panza','frick','bough','dorcas','bijouterie','gonzalo','lizzie','lizzie','junco','maqui','champlain','baggy','0840','squire','blixen','tyche','freddie','adina','azalea','putin','putin','drummond','soong','chicle','elvin','elvin','micky','swapper','willie','quill','dodgy','raymond','ferias','cherie','polecat','sheva','talon','talon','pedlar','relic','relic','decide','radha','kocher','iqbal','eliza','blackboy','croft','gustav','boatman','mondial','douglass','0552','azrael','azrael','moulin','leonhard','knauf','toman','fisherman','fleurette','pawer','kissy','argon','argon','terrestrial','wildcat','harland','incomplete','frederic','josef','riyal','faure','albergo','daniell','braddock','marquis','imogen','brennan','julian','kenny','dustin','marlene','freezer','millet','jaded','bidet','bushido','bushido','bushido','hoping','dorian','shara','girasol','squid','gonzo','pickup','pickup','valent','moctezuma','dickens','dickens','nasser','gibli','dillinger','maura','benne','braver','florie','bianco','titania','tipster','brazen','smite','smite','reverse','remington','remington','guillermo','angang','serenade','embassy','snowflake','kylie','tomahawk','paradox','anniversary','melanie','haggis','0830','redeemer','tribunal','emission','ritter','garry','grape','giorgio','outsider','gabor','humming','mentes','ducasse','radha','ester','sanctus','ester','callan','bradbury','muffy','carmela','cooked','cooked','talus','charmed','ditty','tremor','tremor','allah','ganesha') group by 1,2,3",
       "primary_user": "prod-prj-premium@radixbi-249015.iam.gserviceaccount.com",
       "primary_team": "Unknown",
       "total_cost": 584.2497,
@@ -1243,56 +1243,17 @@ D = {
       }
     },
     {
-      "hash": "1b947dc0a222",
-      "query_preview": "DELETE FROM `npv_data.newreg_predictions_non_dp_trs_test` WHERE \n            domain_key IN (\n        SELECT domain_key F",
-      "full_query": "DELETE FROM `npv_data.newreg_predictions_non_dp_trs_test` WHERE \n            domain_key IN (\n        SELECT domain_key FROM `aditya_adhoc.npv_output_staging_temp`)\n            AND DATE(creation_date) BETWEEN \"2020-08-22\" AND \"2020-09-21\"",
-      "primary_user": "newreg-npv-sa@radixbi-249015.iam.gserviceaccount.com",
-      "primary_team": "Unknown",
-      "total_cost": 188.5333,
-      "avg_cost": 0.3605,
-      "max_cost": 0.4036,
-      "execution_count": 523,
-      "total_bytes_gb": 38611.45,
-      "first_seen": "2025-12-15",
-      "last_seen": "2025-12-23",
-      "waste_tag": "repeated_culprit",
-      "dest_dataset": "npv_data",
-      "optimization": {
-        "patterns": [
-          "repeated_execution",
-          "delete_dml",
-          "medium_scan_per_run",
-          "in_subquery",
-          "staging_table"
-        ],
-        "headline": "Add partition filter and explicit column list to reduce bytes scanned",
-        "bullets": [
-          "Query scans 74 GB on average per execution. The two fastest wins are partition pruning and column pruning.",
-          "Check whether the source table has a DATE or TIMESTAMP partition column. If not, request the table owner to add one \u2014 this is the single highest-impact change.",
-          "Replace any SELECT * with only the columns needed by downstream consumers.",
-          "Add a WHERE clause on the partition column aligned to only the date range the query actually needs.",
-          "Add CLUSTER BY on the most-filtered non-date column to further reduce bytes read within each partition.",
-          "Use INFORMATION_SCHEMA.TABLE_STORAGE to confirm current bytes and verify reduction after changes."
-        ],
-        "sql_example": "-- Check if table is partitioned\nSELECT table_name, partition_expiration_days, clustering_fields\nFROM `region-us`.INFORMATION_SCHEMA.TABLES\nWHERE table_schema = 'your_dataset' AND table_name = 'your_table';\n\n-- After adding partition: filter to needed range only\nSELECT col1, col2, col3   -- replace SELECT *\nFROM your_dataset.your_table\nWHERE DATE(partition_col) >= DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY);",
-        "estimated_savings": 98.04,
-        "savings_pct": 52.0,
-        "priority": "High",
-        "effort": "Low"
-      }
-    },
-    {
       "hash": "fdca4f883c27",
       "query_preview": "CREATE OR REPLACE TABLE npv_data.newreg_predictions_non_dp_trs_test_staging AS \n                        SELECT * FROM np",
       "full_query": "CREATE OR REPLACE TABLE npv_data.newreg_predictions_non_dp_trs_test_staging AS \n                        SELECT * FROM npv_data.newreg_predictions_non_dp_trs_test WHERE domain_key IN (\n                            SELECT domain_key from aditya_adhoc.npv_output_staging_temp)",
       "primary_user": "newreg-npv-sa@radixbi-249015.iam.gserviceaccount.com",
       "primary_team": "Unknown",
-      "total_cost": 188.5333,
-      "avg_cost": 0.3605,
+      "total_cost": 172.5042,
+      "avg_cost": 0.3718,
       "max_cost": 0.4036,
-      "execution_count": 523,
-      "total_bytes_gb": 38611.45,
-      "first_seen": "2025-12-15",
+      "execution_count": 464,
+      "total_bytes_gb": 35328.55,
+      "first_seen": "2025-12-16",
       "last_seen": "2025-12-23",
       "waste_tag": "repeated_culprit",
       "dest_dataset": "npv_data",
@@ -1306,7 +1267,7 @@ D = {
         ],
         "headline": "Partition the target table and switch to incremental append",
         "bullets": [
-          "CREATE TABLE IF NOT EXISTS / CREATE OR REPLACE rebuilds the full table 523\u00d7. Every run scans 100% of historical data even when only new rows need to be added.",
+          "CREATE TABLE IF NOT EXISTS / CREATE OR REPLACE rebuilds the full table 464\u00d7. Every run scans 100% of historical data even when only new rows need to be added.",
           "Partition by DATE(creation_date) or EXTRACT(year ...). Each run appends only to today's partition.",
           "Add clustering on the most-filtered dimension (e.g., tld, project_id) to push down row-group pruning within partitions.",
           "Use partition decorators in INSERT: INSERT INTO table PARTITION (partition_date = CURRENT_DATE()) SELECT ... WHERE DATE(creation_date) = CURRENT_DATE()",
@@ -1314,16 +1275,55 @@ D = {
           "Validate with INFORMATION_SCHEMA.PARTITIONS after migration to confirm scan reduction."
         ],
         "sql_example": "-- Create partitioned + clustered target\nCREATE TABLE IF NOT EXISTS alfred.ds_vw_bq_radix_classic_ngtld\nPARTITION BY creation_year_month\nCLUSTER BY tld\nOPTIONS (partition_expiration_days = 365)\nAS\nSELECT *, DATE_TRUNC(DATE(creation_date), MONTH) AS creation_year_month\nFROM source_table WHERE 1=0;\n\n-- Incremental daily append\nINSERT INTO alfred.ds_vw_bq_radix_classic_ngtld\nSELECT *, DATE_TRUNC(CURRENT_DATE(), MONTH) AS creation_year_month\nFROM source_table\nWHERE DATE(creation_date) = CURRENT_DATE();",
-        "estimated_savings": 141.4,
+        "estimated_savings": 129.38,
         "savings_pct": 75.0,
         "priority": "High",
         "effort": "Medium"
       }
     },
     {
+      "hash": "1b947dc0a222",
+      "query_preview": "DELETE FROM `npv_data.newreg_predictions_non_dp_trs_test` WHERE \n            domain_key IN (\n        SELECT domain_key F",
+      "full_query": "DELETE FROM `npv_data.newreg_predictions_non_dp_trs_test` WHERE \n            domain_key IN (\n        SELECT domain_key FROM `aditya_adhoc.npv_output_staging_temp`)\n            AND DATE(creation_date) BETWEEN \"2023-09-12\" AND \"2023-10-12\"",
+      "primary_user": "newreg-npv-sa@radixbi-249015.iam.gserviceaccount.com",
+      "primary_team": "Unknown",
+      "total_cost": 172.5042,
+      "avg_cost": 0.3718,
+      "max_cost": 0.4036,
+      "execution_count": 464,
+      "total_bytes_gb": 35328.55,
+      "first_seen": "2025-12-16",
+      "last_seen": "2025-12-23",
+      "waste_tag": "repeated_culprit",
+      "dest_dataset": "npv_data",
+      "optimization": {
+        "patterns": [
+          "repeated_execution",
+          "delete_dml",
+          "medium_scan_per_run",
+          "in_subquery",
+          "staging_table"
+        ],
+        "headline": "Add partition filter and explicit column list to reduce bytes scanned",
+        "bullets": [
+          "Query scans 76 GB on average per execution. The two fastest wins are partition pruning and column pruning.",
+          "Check whether the source table has a DATE or TIMESTAMP partition column. If not, request the table owner to add one \u2014 this is the single highest-impact change.",
+          "Replace any SELECT * with only the columns needed by downstream consumers.",
+          "Add a WHERE clause on the partition column aligned to only the date range the query actually needs.",
+          "Add CLUSTER BY on the most-filtered non-date column to further reduce bytes read within each partition.",
+          "Use INFORMATION_SCHEMA.TABLE_STORAGE to confirm current bytes and verify reduction after changes."
+        ],
+        "sql_example": "-- Check if table is partitioned\nSELECT table_name, partition_expiration_days, clustering_fields\nFROM `region-us`.INFORMATION_SCHEMA.TABLES\nWHERE table_schema = 'your_dataset' AND table_name = 'your_table';\n\n-- After adding partition: filter to needed range only\nSELECT col1, col2, col3   -- replace SELECT *\nFROM your_dataset.your_table\nWHERE DATE(partition_col) >= DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY);",
+        "estimated_savings": 89.7,
+        "savings_pct": 52.0,
+        "priority": "High",
+        "effort": "Low"
+      }
+    },
+    {
       "hash": "8ce9e8c8badc",
       "query_preview": " UPDATE `npv_data.newreg_predictions_non_dp_trs_test` \n                                    SET model_version = \"non_dp-2",
-      "full_query": " UPDATE `npv_data.newreg_predictions_non_dp_trs_test` \n                                    SET model_version = \"non_dp-20251101-v1\"\n                                    WHERE date(creation_date) BETWEEN '2013-04-04' AND '2013-05-04' ",
+      "full_query": " UPDATE `npv_data.newreg_predictions_non_dp_trs_test` \n                                    SET model_version = \"non_dp-20251101-v1\"\n                                    WHERE date(creation_date) BETWEEN '2016-01-22' AND '2016-02-21' ",
       "primary_user": "newreg-npv-sa@radixbi-249015.iam.gserviceaccount.com",
       "primary_team": "Unknown",
       "total_cost": 146.2014,
@@ -1361,7 +1361,7 @@ D = {
     {
       "hash": "b46e66110c62",
       "query_preview": "\n  WITH\n    renews AS (\n    SELECT\n      domain_id,\n      renewed_count AS renew_count,\n      expiry_date,\n      renew_r",
-      "full_query": "\n  WITH\n    renews AS (\n    SELECT\n      domain_id,\n      renewed_count AS renew_count,\n      expiry_date,\n      renew_revenue,\n      renew_period,\n      CASE\n        WHEN (renew_type IN ( 'renewal', 'transfer' ) OR autorenew_type IN ('realized')) THEN 1\n      ELSE\n      0\n    END\n      AS renewal_status\n    FROM\n      `radixbi-249015.common_data.expiry_data_vw`\n    WHERE\n      DATE(expiry_date) BETWEEN \"2014-05-31\"\n      AND \"2014-06-29\"\n      AND domain_id NOT IN (\n    SELECT\n      domain_id,\n    FROM (\n      SELECT\n        domain_id,\n        COUNT(domain_id) AS domain_count\n      FROM\n        `radixbi-249015.common_data.expiry_data_vw`\n      WHERE\n        DATE(expiry_date) BETWEEN \"2014-05-31\"\n        AND \"2014-06-29\"\n      GROUP BY\n        1)\n    WHERE\n      domain_count > 1)),\n    ip3 AS (\n  SELECT\n    domain_id,\n    MIN(renewed_count) AS active_renew_count\n  FROM\n    `radixbi-249015.npv_data.newreg_predictions_non_dp_20251229`\n  WHERE\n    renewed = 0\n  GROUP BY\n    domain_id ),\n    pred AS (\n  SELECT\n    temp.*,\n    ip3.active_renew_count\n  FROM\n    `radixbi-249015.npv_data.newreg_predictions_non_dp_20251229` TEMP\n  LEFT JOIN\n    ip3\n  ON\n    temp.domain_id = ip3.domain_id\n  WHERE\n    renewed = 0 )\n  SELECT\n    pred.*,\n    renews.renew_count,\n    renews.renew_revenue,\n    renews.renew_period,\n    renews.renewal_status\n  FROM\n    renews\n  LEFT JOIN\n    pred\n  ON\n    renews.domain_id = pred.domain_id\n  WHERE\n    domain_key IS NOT null\n    AND pred.active_renew_count = renews.renew_count\n  ORDER BY\n    domain_id,\n    renewed_count\n",
+      "full_query": "\n  WITH\n    renews AS (\n    SELECT\n      domain_id,\n      renewed_count AS renew_count,\n      expiry_date,\n      renew_revenue,\n      renew_period,\n      CASE\n        WHEN (renew_type IN ( 'renewal', 'transfer' ) OR autorenew_type IN ('realized')) THEN 1\n      ELSE\n      0\n    END\n      AS renewal_status\n    FROM\n      `radixbi-249015.common_data.expiry_data_vw`\n    WHERE\n      DATE(expiry_date) BETWEEN \"2024-03-31\"\n      AND \"2024-04-29\"\n      AND domain_id NOT IN (\n    SELECT\n      domain_id,\n    FROM (\n      SELECT\n        domain_id,\n        COUNT(domain_id) AS domain_count\n      FROM\n        `radixbi-249015.common_data.expiry_data_vw`\n      WHERE\n        DATE(expiry_date) BETWEEN \"2024-03-31\"\n        AND \"2024-04-29\"\n      GROUP BY\n        1)\n    WHERE\n      domain_count > 1)),\n    ip3 AS (\n  SELECT\n    domain_id,\n    MIN(renewed_count) AS active_renew_count\n  FROM\n    `radixbi-249015.npv_data.newreg_predictions_non_dp_20251229`\n  WHERE\n    renewed = 0\n  GROUP BY\n    domain_id ),\n    pred AS (\n  SELECT\n    temp.*,\n    ip3.active_renew_count\n  FROM\n    `radixbi-249015.npv_data.newreg_predictions_non_dp_20251229` TEMP\n  LEFT JOIN\n    ip3\n  ON\n    temp.domain_id = ip3.domain_id\n  WHERE\n    renewed = 0 )\n  SELECT\n    pred.*,\n    renews.renew_count,\n    renews.renew_revenue,\n    renews.renew_period,\n    renews.renewal_status\n  FROM\n    renews\n  LEFT JOIN\n    pred\n  ON\n    renews.domain_id = pred.domain_id\n  WHERE\n    domain_key IS NOT null\n    AND pred.active_renew_count = renews.renew_count\n  ORDER BY\n    domain_id,\n    renewed_count\n",
       "primary_user": "newreg-npv-sa@radixbi-249015.iam.gserviceaccount.com",
       "primary_team": "Unknown",
       "total_cost": 129.348,
@@ -1401,13 +1401,13 @@ D = {
       "full_query": "INSERT INTO dns_data.cnic_dns_counts\n        (`data_t`, `src`, `src_port`, `src_cc`, `dst`, `dst_port`, `proto`, `qname`, `qtype`, `rcode`)\n        SELECT * FROM dns_data.cnic_dns_counts_temp  WHERE concat(qname, data_t)  not in\n        (SELECT concat(qname, data_t) from  dns_data.cnic_dns_counts )",
       "primary_user": "prod-prj-etl@radixbi-249015.iam.gserviceaccount.com",
       "primary_team": "Unknown",
-      "total_cost": 101.9291,
-      "avg_cost": 1.1201,
+      "total_cost": 102.0065,
+      "avg_cost": 1.121,
       "max_cost": 1.1304,
       "execution_count": 91,
-      "total_bytes_gb": 20874.96,
-      "first_seen": "2025-12-13",
-      "last_seen": "2026-03-13",
+      "total_bytes_gb": 20890.81,
+      "first_seen": "2025-12-16",
+      "last_seen": "2026-03-16",
       "waste_tag": "repeated_culprit",
       "dest_dataset": "dns_data",
       "optimization": {
@@ -1418,7 +1418,7 @@ D = {
         ],
         "headline": "Add partition filter and explicit column list to reduce bytes scanned",
         "bullets": [
-          "Query scans 229 GB on average per execution. The two fastest wins are partition pruning and column pruning.",
+          "Query scans 230 GB on average per execution. The two fastest wins are partition pruning and column pruning.",
           "Check whether the source table has a DATE or TIMESTAMP partition column. If not, request the table owner to add one \u2014 this is the single highest-impact change.",
           "Replace any SELECT * with only the columns needed by downstream consumers.",
           "Add a WHERE clause on the partition column aligned to only the date range the query actually needs.",
@@ -1426,7 +1426,7 @@ D = {
           "Use INFORMATION_SCHEMA.TABLE_STORAGE to confirm current bytes and verify reduction after changes."
         ],
         "sql_example": "-- Check if table is partitioned\nSELECT table_name, partition_expiration_days, clustering_fields\nFROM `region-us`.INFORMATION_SCHEMA.TABLES\nWHERE table_schema = 'your_dataset' AND table_name = 'your_table';\n\n-- After adding partition: filter to needed range only\nSELECT col1, col2, col3   -- replace SELECT *\nFROM your_dataset.your_table\nWHERE DATE(partition_col) >= DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY);",
-        "estimated_savings": 22.42,
+        "estimated_savings": 22.44,
         "savings_pct": 22.0,
         "priority": "Medium",
         "effort": "Low"
@@ -1435,15 +1435,15 @@ D = {
     {
       "hash": "2a48eb7a5ae7",
       "query_preview": "\nSELECT\n  date(capture_date) creation_date,\n  capture_hour AS hour,\n  tld,\n  lower(campaign_name) as campaign_name,\n  RO",
-      "full_query": "\nSELECT\n  date(capture_date) creation_date,\n  capture_hour AS hour,\n  tld,\n  lower(campaign_name) as campaign_name,\n  ROUND(SUM(impressions),4) AS impressions,\n  ROUND(SUM(cost),4) AS amount_spend\nFROM\n  `godaddy_data.godaddy_campaign_data_hourly_vw`\nWHERE\n  tld = \"online\"\n  AND DATE(capture_date) BETWEEN \"2024-01-01\"\n  AND \"2026-01-06\"\nGROUP BY\n  ALL\n",
+      "full_query": "\nSELECT\n  date(capture_date) creation_date,\n  capture_hour AS hour,\n  tld,\n  lower(campaign_name) as campaign_name,\n  ROUND(SUM(impressions),4) AS impressions,\n  ROUND(SUM(cost),4) AS amount_spend\nFROM\n  `godaddy_data.godaddy_campaign_data_hourly_vw`\nWHERE\n  tld = \"online\"\n  AND DATE(capture_date) BETWEEN \"2024-01-01\"\n  AND \"2026-01-14\"\nGROUP BY\n  ALL\n",
       "primary_user": "gd-optimizer-sa@radixbi-249015.iam.gserviceaccount.com",
       "primary_team": "Unknown",
-      "total_cost": 92.856,
+      "total_cost": 89.6592,
       "avg_cost": 0.0116,
       "max_cost": 0.0123,
-      "execution_count": 8010,
-      "total_bytes_gb": 19003.92,
-      "first_seen": "2025-12-13",
+      "execution_count": 7722,
+      "total_bytes_gb": 18353.04,
+      "first_seen": "2025-12-16",
       "last_seen": "2026-03-06",
       "waste_tag": "repeated_culprit",
       "dest_dataset": "_fffffb53dc007518623bff0766f8b1e346648863",
@@ -1463,43 +1463,7 @@ D = {
           "Use INFORMATION_SCHEMA.TABLE_STORAGE to confirm current bytes and verify reduction after changes."
         ],
         "sql_example": "-- Check if table is partitioned\nSELECT table_name, partition_expiration_days, clustering_fields\nFROM `region-us`.INFORMATION_SCHEMA.TABLES\nWHERE table_schema = 'your_dataset' AND table_name = 'your_table';\n\n-- After adding partition: filter to needed range only\nSELECT col1, col2, col3   -- replace SELECT *\nFROM your_dataset.your_table\nWHERE DATE(partition_col) >= DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY);",
-        "estimated_savings": 57.57,
-        "savings_pct": 62.0,
-        "priority": "High",
-        "effort": "Low"
-      }
-    },
-    {
-      "hash": "7fb9aecfc24a",
-      "query_preview": "\nSELECT\n  DATE(FORMAT_TIMESTAMP('%Y-%m-%d', capture_date, 'America/Los_Angeles')) AS creation_date,\n  CAST(FORMAT_TIMEST",
-      "full_query": "\nSELECT\n  DATE(FORMAT_TIMESTAMP('%Y-%m-%d', capture_date, 'America/Los_Angeles')) AS creation_date,\n  CAST(FORMAT_TIMESTAMP('%H', capture_date, 'America/Los_Angeles') AS INT64) AS hour,\n  tld,\n  ROUND(AVG(position),4) AS position,\nFROM\n  `radixbi-249015.Web_Scraping.serp_godaddy`\nWHERE\n  list_type LIKE \"%V%\"\n  AND tld IN (\"online\")\n  AND LOWER(country_code) = \"us\"\n  AND DATE(FORMAT_TIMESTAMP('%Y-%m-%d', capture_date, 'America/Los_Angeles')) BETWEEN \"2024-01-01\" AND \"2025-12-15\"\nGROUP BY\n  ALL\n",
-      "primary_user": "gd-optimizer-sa@radixbi-249015.iam.gserviceaccount.com",
-      "primary_team": "Unknown",
-      "total_cost": 90.5626,
-      "avg_cost": 0.0113,
-      "max_cost": 0.0323,
-      "execution_count": 8010,
-      "total_bytes_gb": 18547.33,
-      "first_seen": "2025-12-13",
-      "last_seen": "2026-03-06",
-      "waste_tag": "repeated_culprit",
-      "dest_dataset": "_fffffb53dc007518623bff0766f8b1e346648863",
-      "optimization": {
-        "patterns": [
-          "high_frequency_loop",
-          "timestamp_formatting"
-        ],
-        "headline": "Add partition filter and explicit column list to reduce bytes scanned",
-        "bullets": [
-          "Query scans 2 GB on average per execution. The two fastest wins are partition pruning and column pruning.",
-          "Check whether the source table has a DATE or TIMESTAMP partition column. If not, request the table owner to add one \u2014 this is the single highest-impact change.",
-          "Replace any SELECT * with only the columns needed by downstream consumers.",
-          "Add a WHERE clause on the partition column aligned to only the date range the query actually needs.",
-          "Add CLUSTER BY on the most-filtered non-date column to further reduce bytes read within each partition.",
-          "Use INFORMATION_SCHEMA.TABLE_STORAGE to confirm current bytes and verify reduction after changes."
-        ],
-        "sql_example": "-- Check if table is partitioned\nSELECT table_name, partition_expiration_days, clustering_fields\nFROM `region-us`.INFORMATION_SCHEMA.TABLES\nWHERE table_schema = 'your_dataset' AND table_name = 'your_table';\n\n-- After adding partition: filter to needed range only\nSELECT col1, col2, col3   -- replace SELECT *\nFROM your_dataset.your_table\nWHERE DATE(partition_col) >= DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY);",
-        "estimated_savings": 56.15,
+        "estimated_savings": 55.59,
         "savings_pct": 62.0,
         "priority": "High",
         "effort": "Low"
@@ -1508,7 +1472,7 @@ D = {
     {
       "hash": "530e12ad9225",
       "query_preview": "\n        WITH\n        pred AS (\n        SELECT\n            domain_id,\n            creation_date,\n            renewed_cou",
-      "full_query": "\n        WITH\n        pred AS (\n        SELECT\n            domain_id,\n            creation_date,\n            renewed_count,\n            domain_age,\n            cumulative_renew_pred,\n            revenue,\n            period,\n            init_model_version,\n            model_version\n        FROM\n            `npv_data.newreg_predictions_non_dp_trs_test`\n        WHERE\n            renewed = 0\n            \n            AND DATE(creation_date) BETWEEN \"2018-02-04\"\n            AND \"2018-03-06\" QUALIFY ROW_NUMBER() OVER (PARTITION BY domain_id ORDER BY renewed_count) = 1 ),\n        ddomain AS (\n        SELECT\n            *\n        FROM\n            `prepped_data.day_domain_prep`\n        WHERE\n            DATE(timestamp) BETWEEN \"2018-02-04\"\n            AND \"2018-03-06\" ),\n        gibb AS (\n        SELECT\n            *\n        FROM\n            `prepped_data.gibberish_score_prep`\n        WHERE\n            DATE(timestamp) BETWEEN \"2018-02-04\"\n            AND \"2018-03-06\" ),\n        patrn AS (\n        SELECT\n            *\n        FROM\n            `prepped_data.pattern_score_prep`\n        WHERE\n            DATE(timestamp) BETWEEN \"2018-02-04\"\n            AND \"2018-03-06\" ),\n        nreg AS (\n        SELECT\n            domain_id,\n            tld,\n            net_revenue AS reg_revenue,\n            LOWER(registrar_shortname) AS registrar,\n            LOWER(client_shortname) AS reseller,\n            client_country AS reseller_country,\n            CASE\n                WHEN period IS NULL THEN 1\n            ELSE\n            period\n        END\n            AS reg_period,\n            CASE\n                WHEN REGEXP_CONTAINS(promo_tag, r\"^\\s*$\") THEN NULL\n            ELSE\n            promo_tag\n        END\n            AS promo_tag\n        FROM\n            `radixbi-249015.radix_data.newreg`\n        WHERE\n            DATE(creation_date) BETWEEN \"2018-02-04\"\n            AND \"2018-03-06\"\n            AND mbg = 0)\n        SELECT\n            pred.domain_id,\n            pred.creation_date,\n            pred.renewed_count,\n            pred.domain_age,\n            nreg.tld,\n            nreg.registrar,\n            nreg.reseller,\n            nreg.reseller_country,\n            case when nreg.promo_tag = \"internal_bundle\" then \"reg_price_promo\" else promo_tag end as promo_tag,\n            nreg.reg_period,\n            nreg.reg_revenue,\n            gibb.gibberish_score as gibb_score,\n            patrn.pattern_domain_count,\n            ddomain.day_domains,\n            ddomain.sld_length,\n            ddomain.sld_type,\n            pred.revenue,\n            pred.period,\n            pred.init_model_version,\n            pred.model_version\n        FROM\n            pred\n        LEFT JOIN\n            nreg\n        ON\n            pred.domain_id = nreg.domain_id\n        LEFT JOIN\n            gibb\n        ON\n            pred.domain_id = gibb.domain_id\n        LEFT JOIN\n            ddomain\n        ON\n            pred.domain_id = ddomain.domain_id\n        LEFT JOIN\n            patrn\n        ON\n            pred.domain_id = patrn.domain_id\n",
+      "full_query": "\n        WITH\n        pred AS (\n        SELECT\n            domain_id,\n            creation_date,\n            renewed_count,\n            domain_age,\n            cumulative_renew_pred,\n            revenue,\n            period,\n            init_model_version,\n            model_version\n        FROM\n            `npv_data.newreg_predictions_non_dp_trs_test`\n        WHERE\n            renewed = 0\n            \n            AND DATE(creation_date) BETWEEN \"2022-12-07\"\n            AND \"2023-01-06\" QUALIFY ROW_NUMBER() OVER (PARTITION BY domain_id ORDER BY renewed_count) = 1 ),\n        ddomain AS (\n        SELECT\n            *\n        FROM\n            `prepped_data.day_domain_prep`\n        WHERE\n            DATE(timestamp) BETWEEN \"2022-12-07\"\n            AND \"2023-01-06\" ),\n        gibb AS (\n        SELECT\n            *\n        FROM\n            `prepped_data.gibberish_score_prep`\n        WHERE\n            DATE(timestamp) BETWEEN \"2022-12-07\"\n            AND \"2023-01-06\" ),\n        patrn AS (\n        SELECT\n            *\n        FROM\n            `prepped_data.pattern_score_prep`\n        WHERE\n            DATE(timestamp) BETWEEN \"2022-12-07\"\n            AND \"2023-01-06\" ),\n        nreg AS (\n        SELECT\n            domain_id,\n            tld,\n            net_revenue AS reg_revenue,\n            LOWER(registrar_shortname) AS registrar,\n            LOWER(client_shortname) AS reseller,\n            client_country AS reseller_country,\n            CASE\n                WHEN period IS NULL THEN 1\n            ELSE\n            period\n        END\n            AS reg_period,\n            CASE\n                WHEN REGEXP_CONTAINS(promo_tag, r\"^\\s*$\") THEN NULL\n            ELSE\n            promo_tag\n        END\n            AS promo_tag\n        FROM\n            `radixbi-249015.radix_data.newreg`\n        WHERE\n            DATE(creation_date) BETWEEN \"2022-12-07\"\n            AND \"2023-01-06\"\n            AND mbg = 0)\n        SELECT\n            pred.domain_id,\n            pred.creation_date,\n            pred.renewed_count,\n            pred.domain_age,\n            nreg.tld,\n            nreg.registrar,\n            nreg.reseller,\n            nreg.reseller_country,\n            case when nreg.promo_tag = \"internal_bundle\" then \"reg_price_promo\" else promo_tag end as promo_tag,\n            nreg.reg_period,\n            nreg.reg_revenue,\n            gibb.gibberish_score as gibb_score,\n            patrn.pattern_domain_count,\n            ddomain.day_domains,\n            ddomain.sld_length,\n            ddomain.sld_type,\n            pred.revenue,\n            pred.period,\n            pred.init_model_version,\n            pred.model_version\n        FROM\n            pred\n        LEFT JOIN\n            nreg\n        ON\n            pred.domain_id = nreg.domain_id\n        LEFT JOIN\n            gibb\n        ON\n            pred.domain_id = gibb.domain_id\n        LEFT JOIN\n            ddomain\n        ON\n            pred.domain_id = ddomain.domain_id\n        LEFT JOIN\n            patrn\n        ON\n            pred.domain_id = patrn.domain_id\n",
       "primary_user": "newreg-npv-sa@radixbi-249015.iam.gserviceaccount.com",
       "primary_team": "Unknown",
       "total_cost": 88.8869,
@@ -1542,18 +1506,54 @@ D = {
       }
     },
     {
+      "hash": "7fb9aecfc24a",
+      "query_preview": "\nSELECT\n  DATE(FORMAT_TIMESTAMP('%Y-%m-%d', capture_date, 'America/Los_Angeles')) AS creation_date,\n  CAST(FORMAT_TIMEST",
+      "full_query": "\nSELECT\n  DATE(FORMAT_TIMESTAMP('%Y-%m-%d', capture_date, 'America/Los_Angeles')) AS creation_date,\n  CAST(FORMAT_TIMESTAMP('%H', capture_date, 'America/Los_Angeles') AS INT64) AS hour,\n  tld,\n  ROUND(AVG(position),4) AS position,\nFROM\n  `radixbi-249015.Web_Scraping.serp_godaddy`\nWHERE\n  list_type LIKE \"%V%\"\n  AND tld IN (\"online\")\n  AND LOWER(country_code) = \"us\"\n  AND DATE(FORMAT_TIMESTAMP('%Y-%m-%d', capture_date, 'America/Los_Angeles')) BETWEEN \"2024-01-01\" AND \"2026-01-16\"\nGROUP BY\n  ALL\n",
+      "primary_user": "gd-optimizer-sa@radixbi-249015.iam.gserviceaccount.com",
+      "primary_team": "Unknown",
+      "total_cost": 86.2331,
+      "avg_cost": 0.0112,
+      "max_cost": 0.0323,
+      "execution_count": 7722,
+      "total_bytes_gb": 17660.6,
+      "first_seen": "2025-12-16",
+      "last_seen": "2026-03-06",
+      "waste_tag": "repeated_culprit",
+      "dest_dataset": "_fffffb53dc007518623bff0766f8b1e346648863",
+      "optimization": {
+        "patterns": [
+          "high_frequency_loop",
+          "timestamp_formatting"
+        ],
+        "headline": "Add partition filter and explicit column list to reduce bytes scanned",
+        "bullets": [
+          "Query scans 2 GB on average per execution. The two fastest wins are partition pruning and column pruning.",
+          "Check whether the source table has a DATE or TIMESTAMP partition column. If not, request the table owner to add one \u2014 this is the single highest-impact change.",
+          "Replace any SELECT * with only the columns needed by downstream consumers.",
+          "Add a WHERE clause on the partition column aligned to only the date range the query actually needs.",
+          "Add CLUSTER BY on the most-filtered non-date column to further reduce bytes read within each partition.",
+          "Use INFORMATION_SCHEMA.TABLE_STORAGE to confirm current bytes and verify reduction after changes."
+        ],
+        "sql_example": "-- Check if table is partitioned\nSELECT table_name, partition_expiration_days, clustering_fields\nFROM `region-us`.INFORMATION_SCHEMA.TABLES\nWHERE table_schema = 'your_dataset' AND table_name = 'your_table';\n\n-- After adding partition: filter to needed range only\nSELECT col1, col2, col3   -- replace SELECT *\nFROM your_dataset.your_table\nWHERE DATE(partition_col) >= DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY);",
+        "estimated_savings": 53.46,
+        "savings_pct": 62.0,
+        "priority": "High",
+        "effort": "Low"
+      }
+    },
+    {
       "hash": "ae2860739303",
       "query_preview": "CREATE TABLE IF NOT EXISTS\n  alfred.ds_vw_bq_radix_classic_ngtld AS(\n  SELECT\n    EXTRACT(year\n    FROM\n      creation_d",
       "full_query": "CREATE TABLE IF NOT EXISTS\n  alfred.ds_vw_bq_radix_classic_ngtld AS(\n  SELECT\n    EXTRACT(year\n    FROM\n      creation_date) AS creation_year,\n    EXTRACT(month\n    FROM\n      creation_date) AS creation_month,\n    registrar_shortname,\n    client_shortname,\n    tld,\n    CASE\n      WHEN tld IN ('press', 'host', 'space', 'website', 'tech', 'site', 'online', 'store', 'fun', 'uno', 'pw', 'in.net') THEN 'radix'\n      WHEN tld IN ('com',\n      'net',\n      'org',\n      'biz',\n      'info') THEN 'classic'\n      WHEN tld IN ('tel', 'name', 'mobi', 'gov', 'asia', 'aero', 'pro', 'museum', 'coop', 'cat', 'xxx', 'jobs', 'travel', 'post') THEN 'classic others'\n      WHEN tld LIKE '%.%' THEN 'others'\n      WHEN tld LIKE 'xn-%' THEN 'IDN'\n      WHEN LENGTH(tld) = 2 THEN 'ccTLD'\n      ELSE 'other_ntld'\n  END\n    AS tld_type,\n    period,\n    domain_classification,\n    promo_tag,\n    actual_flag,\n    SUM(count) AS domain_count,\n    SUM(domyears) AS domain_years,\n    SUM(renewed) AS renewed_domains,\n    SUM(revenue) AS revenue,\n    SUM(npv) AS npv\n  FROM\n    tableau.vw_BQ_Radix_Classic_Ngtld\n  GROUP BY\n    ALL)",
       "primary_user": "radixbi@radixbi-249015.iam.gserviceaccount.com",
       "primary_team": "Unknown",
-      "total_cost": 85.0942,
-      "avg_cost": 0.4727,
+      "total_cost": 82.2252,
+      "avg_cost": 0.4568,
       "max_cost": 0.6189,
       "execution_count": 180,
-      "total_bytes_gb": 17427.44,
-      "first_seen": "2025-12-13",
-      "last_seen": "2026-03-12",
+      "total_bytes_gb": 16839.82,
+      "first_seen": "2025-12-16",
+      "last_seen": "2026-03-15",
       "waste_tag": "repeated_culprit",
       "dest_dataset": "alfred",
       "optimization": {
@@ -1572,7 +1572,7 @@ D = {
           "Validate with INFORMATION_SCHEMA.PARTITIONS after migration to confirm scan reduction."
         ],
         "sql_example": "-- Create partitioned + clustered target\nCREATE TABLE IF NOT EXISTS alfred.ds_vw_bq_radix_classic_ngtld\nPARTITION BY creation_year_month\nCLUSTER BY tld\nOPTIONS (partition_expiration_days = 365)\nAS\nSELECT *, DATE_TRUNC(DATE(creation_date), MONTH) AS creation_year_month\nFROM source_table WHERE 1=0;\n\n-- Incremental daily append\nINSERT INTO alfred.ds_vw_bq_radix_classic_ngtld\nSELECT *, DATE_TRUNC(CURRENT_DATE(), MONTH) AS creation_year_month\nFROM source_table\nWHERE DATE(creation_date) = CURRENT_DATE();",
-        "estimated_savings": 63.82,
+        "estimated_savings": 61.67,
         "savings_pct": 75.0,
         "priority": "High",
         "effort": "Medium"
@@ -1581,7 +1581,7 @@ D = {
     {
       "hash": "ff8222af904a",
       "query_preview": "\n  WITH\n    renews AS (\n    SELECT\n      domain_id,\n      renewed_count AS renew_count,\n      expiry_date,\n      renew_r",
-      "full_query": "\n  WITH\n    renews AS (\n    SELECT\n      domain_id,\n      renewed_count AS renew_count,\n      expiry_date,\n      renew_revenue,\n      renew_period,\n      CASE\n        WHEN (renew_type IN ( 'renewal', 'transfer' ) OR autorenew_type IN ('realized')) THEN 1\n      ELSE\n      0\n    END\n      AS renewal_status\n    FROM\n      `radixbi-249015.common_data.expiry_data_vw`\n    WHERE\n      DATE(expiry_date) BETWEEN \"2024-09-30\"\n      AND \"2024-10-29\"\n      AND domain_id NOT IN (\n    SELECT\n      domain_id,\n    FROM (\n      SELECT\n        domain_id,\n        COUNT(domain_id) AS domain_count\n      FROM\n        `radixbi-249015.common_data.expiry_data_vw`\n      WHERE\n        DATE(expiry_date) BETWEEN \"2024-09-30\"\n        AND \"2024-10-29\"\n      GROUP BY\n        1)\n    WHERE\n      domain_count > 1)),\n    ip3 AS (\n  SELECT\n    domain_id,\n    MIN(renewed_count) AS active_renew_count\n  FROM\n    `radixbi-249015.npv_data.newreg_predictions_non_dp_20260204`\n  WHERE\n    renewed = 0\n  GROUP BY\n    domain_id ),\n    pred AS (\n  SELECT\n    temp.*,\n    ip3.active_renew_count\n  FROM\n    `radixbi-249015.npv_data.newreg_predictions_non_dp_20260204` TEMP\n  LEFT JOIN\n    ip3\n  ON\n    temp.domain_id = ip3.domain_id\n  WHERE\n    renewed = 0 )\n  SELECT\n    pred.*,\n    renews.renew_count,\n    renews.renew_revenue,\n    renews.renew_period,\n    renews.renewal_status\n  FROM\n    renews\n  LEFT JOIN\n    pred\n  ON\n    renews.domain_id = pred.domain_id\n  WHERE\n    domain_key IS NOT null\n    AND pred.active_renew_count = renews.renew_count\n  ORDER BY\n    domain_id,\n    renewed_count\n",
+      "full_query": "\n  WITH\n    renews AS (\n    SELECT\n      domain_id,\n      renewed_count AS renew_count,\n      expiry_date,\n      renew_revenue,\n      renew_period,\n      CASE\n        WHEN (renew_type IN ( 'renewal', 'transfer' ) OR autorenew_type IN ('realized')) THEN 1\n      ELSE\n      0\n    END\n      AS renewal_status\n    FROM\n      `radixbi-249015.common_data.expiry_data_vw`\n    WHERE\n      DATE(expiry_date) BETWEEN \"2024-10-27\"\n      AND \"2024-11-25\"\n      AND domain_id NOT IN (\n    SELECT\n      domain_id,\n    FROM (\n      SELECT\n        domain_id,\n        COUNT(domain_id) AS domain_count\n      FROM\n        `radixbi-249015.common_data.expiry_data_vw`\n      WHERE\n        DATE(expiry_date) BETWEEN \"2024-10-27\"\n        AND \"2024-11-25\"\n      GROUP BY\n        1)\n    WHERE\n      domain_count > 1)),\n    ip3 AS (\n  SELECT\n    domain_id,\n    MIN(renewed_count) AS active_renew_count\n  FROM\n    `radixbi-249015.npv_data.newreg_predictions_non_dp_20260204`\n  WHERE\n    renewed = 0\n  GROUP BY\n    domain_id ),\n    pred AS (\n  SELECT\n    temp.*,\n    ip3.active_renew_count\n  FROM\n    `radixbi-249015.npv_data.newreg_predictions_non_dp_20260204` TEMP\n  LEFT JOIN\n    ip3\n  ON\n    temp.domain_id = ip3.domain_id\n  WHERE\n    renewed = 0 )\n  SELECT\n    pred.*,\n    renews.renew_count,\n    renews.renew_revenue,\n    renews.renew_period,\n    renews.renewal_status\n  FROM\n    renews\n  LEFT JOIN\n    pred\n  ON\n    renews.domain_id = pred.domain_id\n  WHERE\n    domain_key IS NOT null\n    AND pred.active_renew_count = renews.renew_count\n  ORDER BY\n    domain_id,\n    renewed_count\n",
       "primary_user": "newreg-npv-sa@radixbi-249015.iam.gserviceaccount.com",
       "primary_team": "Unknown",
       "total_cost": 82.1033,
@@ -1621,13 +1621,13 @@ D = {
       "full_query": "\n      SELECT\n        COUNT(distinct search_domain) cnt,\n      FROM\n        Web_Scraping.serp_godaddy\n      WHERE\n        DATETIME(capture_date) >= DATETIME(TIMESTAMP_SUB(CURRENT_DATETIME(), INTERVAL 1 HOUR))\n        AND country_code ='US'\n        AND domain_type_premium = 'N';\n      ",
       "primary_user": "bi-data-integrity@radixbi-249015.iam.gserviceaccount.com",
       "primary_team": "Unknown",
-      "total_cost": 81.2136,
-      "avg_cost": 0.0376,
-      "max_cost": 0.0387,
-      "execution_count": 2161,
-      "total_bytes_gb": 16632.09,
-      "first_seen": "2025-12-13",
-      "last_seen": "2026-03-13",
+      "total_cost": 81.4464,
+      "avg_cost": 0.0377,
+      "max_cost": 0.0388,
+      "execution_count": 2162,
+      "total_bytes_gb": 16679.5,
+      "first_seen": "2025-12-16",
+      "last_seen": "2026-03-16",
       "waste_tag": "repeated_culprit",
       "dest_dataset": "_0b2efb4045e4268b75d1eac025163d69d9252d02",
       "optimization": {
@@ -1645,7 +1645,7 @@ D = {
           "Use INFORMATION_SCHEMA.TABLE_STORAGE to confirm current bytes and verify reduction after changes."
         ],
         "sql_example": "-- Check if table is partitioned\nSELECT table_name, partition_expiration_days, clustering_fields\nFROM `region-us`.INFORMATION_SCHEMA.TABLES\nWHERE table_schema = 'your_dataset' AND table_name = 'your_table';\n\n-- After adding partition: filter to needed range only\nSELECT col1, col2, col3   -- replace SELECT *\nFROM your_dataset.your_table\nWHERE DATE(partition_col) >= DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY);",
-        "estimated_savings": 50.35,
+        "estimated_savings": 50.5,
         "savings_pct": 62.0,
         "priority": "High",
         "effort": "Low"
@@ -1657,13 +1657,13 @@ D = {
       "full_query": "SELECT domain from premium_db.competitor_shop_domains where executed = 0 order by sld_length limit 100",
       "primary_user": "prod-prj-premium@radixbi-249015.iam.gserviceaccount.com",
       "primary_team": "Unknown",
-      "total_cost": 78.2174,
+      "total_cost": 79.1483,
       "avg_cost": 0.0013,
       "max_cost": 0.0014,
-      "execution_count": 58272,
-      "total_bytes_gb": 15904.75,
-      "first_seen": "2025-12-13",
-      "last_seen": "2026-03-12",
+      "execution_count": 58898,
+      "total_bytes_gb": 16110.57,
+      "first_seen": "2025-12-16",
+      "last_seen": "2026-03-16",
       "waste_tag": "repeated_culprit",
       "dest_dataset": "_0064b2f64cbf528428922cfd3779cbbc44588c95",
       "optimization": {
@@ -1674,14 +1674,14 @@ D = {
         ],
         "headline": "Replace full-table polling loop with an event-driven queue",
         "bullets": [
-          "This query runs 58,272\u00d7 by scanning the full table to find rows WHERE executed = 0. Each scan reads the entire table even when there is no new work.",
+          "This query runs 58,898\u00d7 by scanning the full table to find rows WHERE executed = 0. Each scan reads the entire table even when there is no new work.",
           "Replace with Cloud Tasks or Pub/Sub: write a message when a new row is created, trigger the job only when a message arrives \u2014 zero scans when idle.",
           "If a queue is not feasible, create a lightweight pending_jobs table with only unprocessed rows, indexed on the status column, and poll that instead.",
           "Add a LIMIT clause as an immediate band-aid to cap bytes read per execution while the architecture is updated.",
           "Estimated reduction: 90%+ of current scan volume once queue-driven."
         ],
         "sql_example": "-- Option A: poll a filtered micro-table instead of full scan\nSELECT domain FROM pending_jobs WHERE executed = 0 ORDER BY created_at LIMIT 100;\n\n-- Option B: after processing, mark done in batch\nUPDATE premium_db.competitor_shop_domains\nSET executed = 1\nWHERE domain IN UNNEST(@processed_batch);",
-        "estimated_savings": 71.96,
+        "estimated_savings": 72.82,
         "savings_pct": 92.0,
         "priority": "High",
         "effort": "High"
@@ -1690,15 +1690,15 @@ D = {
     {
       "hash": "11777203af1d",
       "query_preview": "SELECT COUNT(*) as row_count FROM (\n                    Select distinct lower(campaign_name) as campaign_name from `goda",
-      "full_query": "SELECT COUNT(*) as row_count FROM (\n                    Select distinct lower(campaign_name) as campaign_name from `godaddy_data.godaddy_campaign_data_hourly_vw`\n                    where date(capture_date) between \"2024-01-01\" and \"2026-01-22\" \n                )",
+      "full_query": "SELECT COUNT(*) as row_count FROM (\n                    Select distinct lower(campaign_name) as campaign_name from `godaddy_data.godaddy_campaign_data_hourly_vw`\n                    where date(capture_date) between \"2024-01-01\" and \"2026-01-18\" \n                )",
       "primary_user": "gd-optimizer-sa@radixbi-249015.iam.gserviceaccount.com",
       "primary_team": "Unknown",
-      "total_cost": 77.7437,
+      "total_cost": 75.0653,
       "avg_cost": 0.0097,
       "max_cost": 0.0103,
-      "execution_count": 8014,
-      "total_bytes_gb": 15931.61,
-      "first_seen": "2025-12-13",
+      "execution_count": 7726,
+      "total_bytes_gb": 15384.41,
+      "first_seen": "2025-12-16",
       "last_seen": "2026-03-06",
       "waste_tag": "repeated_culprit",
       "dest_dataset": "_fffffb53dc007518623bff0766f8b1e346648863",
@@ -1719,7 +1719,7 @@ D = {
           "Use INFORMATION_SCHEMA.TABLE_STORAGE to confirm current bytes and verify reduction after changes."
         ],
         "sql_example": "-- Check if table is partitioned\nSELECT table_name, partition_expiration_days, clustering_fields\nFROM `region-us`.INFORMATION_SCHEMA.TABLES\nWHERE table_schema = 'your_dataset' AND table_name = 'your_table';\n\n-- After adding partition: filter to needed range only\nSELECT col1, col2, col3   -- replace SELECT *\nFROM your_dataset.your_table\nWHERE DATE(partition_col) >= DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY);",
-        "estimated_savings": 48.2,
+        "estimated_savings": 46.54,
         "savings_pct": 62.0,
         "priority": "Medium",
         "effort": "Low"
@@ -1728,15 +1728,15 @@ D = {
     {
       "hash": "cf567654c5b4",
       "query_preview": "\n                    Select distinct lower(campaign_name) as campaign_name from `godaddy_data.godaddy_campaign_data_hour",
-      "full_query": "\n                    Select distinct lower(campaign_name) as campaign_name from `godaddy_data.godaddy_campaign_data_hourly_vw`\n                    where date(capture_date) between \"2024-01-01\" and \"2026-01-04\" \n                ",
+      "full_query": "\n                    Select distinct lower(campaign_name) as campaign_name from `godaddy_data.godaddy_campaign_data_hourly_vw`\n                    where date(capture_date) between \"2024-01-01\" and \"2026-02-11\" \n                ",
       "primary_user": "gd-optimizer-sa@radixbi-249015.iam.gserviceaccount.com",
       "primary_team": "Unknown",
-      "total_cost": 77.7243,
+      "total_cost": 75.0459,
       "avg_cost": 0.0097,
       "max_cost": 0.0103,
-      "execution_count": 8012,
-      "total_bytes_gb": 15927.63,
-      "first_seen": "2025-12-13",
+      "execution_count": 7724,
+      "total_bytes_gb": 15380.43,
+      "first_seen": "2025-12-16",
       "last_seen": "2026-03-06",
       "waste_tag": "repeated_culprit",
       "dest_dataset": "_fffffb53dc007518623bff0766f8b1e346648863",
@@ -1756,7 +1756,7 @@ D = {
           "Use INFORMATION_SCHEMA.TABLE_STORAGE to confirm current bytes and verify reduction after changes."
         ],
         "sql_example": "-- Check if table is partitioned\nSELECT table_name, partition_expiration_days, clustering_fields\nFROM `region-us`.INFORMATION_SCHEMA.TABLES\nWHERE table_schema = 'your_dataset' AND table_name = 'your_table';\n\n-- After adding partition: filter to needed range only\nSELECT col1, col2, col3   -- replace SELECT *\nFROM your_dataset.your_table\nWHERE DATE(partition_col) >= DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY);",
-        "estimated_savings": 48.19,
+        "estimated_savings": 46.53,
         "savings_pct": 62.0,
         "priority": "Medium",
         "effort": "Low"
@@ -1765,15 +1765,15 @@ D = {
     {
       "hash": "53ca0d351a36",
       "query_preview": "SELECT COUNT(*) as row_count FROM (\nSELECT\n  date(capture_date) creation_date,\n  capture_hour AS hour,\n  tld,\n  lower(ca",
-      "full_query": "SELECT COUNT(*) as row_count FROM (\nSELECT\n  date(capture_date) creation_date,\n  capture_hour AS hour,\n  tld,\n  lower(campaign_name) as campaign_name,\n  ROUND(SUM(impressions),4) AS impressions,\n  ROUND(SUM(cost),4) AS amount_spend\nFROM\n  `godaddy_data.godaddy_campaign_data_hourly_vw`\nWHERE\n  tld = \"online\"\n  AND DATE(capture_date) BETWEEN \"2024-01-01\"\n  AND \"2025-12-17\"\nGROUP BY\n  ALL\n)",
+      "full_query": "SELECT COUNT(*) as row_count FROM (\nSELECT\n  date(capture_date) creation_date,\n  capture_hour AS hour,\n  tld,\n  lower(campaign_name) as campaign_name,\n  ROUND(SUM(impressions),4) AS impressions,\n  ROUND(SUM(cost),4) AS amount_spend\nFROM\n  `godaddy_data.godaddy_campaign_data_hourly_vw`\nWHERE\n  tld = \"online\"\n  AND DATE(capture_date) BETWEEN \"2024-01-01\"\n  AND \"2026-03-03\"\nGROUP BY\n  ALL\n)",
       "primary_user": "gd-optimizer-sa@radixbi-249015.iam.gserviceaccount.com",
       "primary_team": "Unknown",
-      "total_cost": 77.715,
+      "total_cost": 75.0366,
       "avg_cost": 0.0097,
       "max_cost": 0.0103,
-      "execution_count": 8011,
-      "total_bytes_gb": 15925.73,
-      "first_seen": "2025-12-13",
+      "execution_count": 7723,
+      "total_bytes_gb": 15378.53,
+      "first_seen": "2025-12-16",
       "last_seen": "2026-03-06",
       "waste_tag": "repeated_culprit",
       "dest_dataset": "_fffffb53dc007518623bff0766f8b1e346648863",
@@ -1794,7 +1794,7 @@ D = {
           "Use INFORMATION_SCHEMA.TABLE_STORAGE to confirm current bytes and verify reduction after changes."
         ],
         "sql_example": "-- Check if table is partitioned\nSELECT table_name, partition_expiration_days, clustering_fields\nFROM `region-us`.INFORMATION_SCHEMA.TABLES\nWHERE table_schema = 'your_dataset' AND table_name = 'your_table';\n\n-- After adding partition: filter to needed range only\nSELECT col1, col2, col3   -- replace SELECT *\nFROM your_dataset.your_table\nWHERE DATE(partition_col) >= DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY);",
-        "estimated_savings": 48.18,
+        "estimated_savings": 46.52,
         "savings_pct": 62.0,
         "priority": "Medium",
         "effort": "Low"
@@ -1806,13 +1806,13 @@ D = {
       "full_query": "UPDATE premium_db.competitor_shop_domains set executed = 1 where domain in ('')",
       "primary_user": "prod-prj-premium@radixbi-249015.iam.gserviceaccount.com",
       "primary_team": "Unknown",
-      "total_cost": 67.5848,
+      "total_cost": 68.3731,
       "avg_cost": 0.0013,
       "max_cost": 0.0014,
-      "execution_count": 50201,
-      "total_bytes_gb": 13737.83,
-      "first_seen": "2025-12-13",
-      "last_seen": "2026-03-12",
+      "execution_count": 50713,
+      "total_bytes_gb": 13907.76,
+      "first_seen": "2025-12-16",
+      "last_seen": "2026-03-16",
       "waste_tag": "repeated_culprit",
       "dest_dataset": "premium_db",
       "optimization": {
@@ -1823,14 +1823,14 @@ D = {
         ],
         "headline": "Replace row-by-row UPDATE loop with a single batch MERGE",
         "bullets": [
-          "UPDATE runs 50,201\u00d7 individually. Each statement opens a full table scan and write lock even when updating a single row.",
+          "UPDATE runs 50,713\u00d7 individually. Each statement opens a full table scan and write lock even when updating a single row.",
           "Collect all pending IDs into an array or temp table, then run one MERGE statement that processes all rows in a single pass.",
           "Use UNNEST(@id_array) as the source in the MERGE to avoid creating a temporary table for small batches.",
           "Add a partition on the target table by date or batch_id so the MERGE only touches the relevant partition.",
           "Schedule the batch MERGE to run at fixed intervals (e.g., every 5 minutes) rather than per-event to further reduce overhead."
         ],
         "sql_example": "-- Single MERGE replacing thousands of individual UPDATEs\nMERGE premium_db.competitor_shop_domains AS target\nUSING UNNEST(@processed_domains) AS src(domain)\nON target.domain = src.domain\nWHEN MATCHED THEN\n  UPDATE SET executed = 1, updated_at = CURRENT_TIMESTAMP();",
-        "estimated_savings": 59.47,
+        "estimated_savings": 60.17,
         "savings_pct": 88.0,
         "priority": "High",
         "effort": "Medium"
@@ -1839,15 +1839,15 @@ D = {
     {
       "hash": "b1516e69b9f4",
       "query_preview": "SELECT COUNT(*) as row_count FROM (\nSELECT\n  DATE(FORMAT_TIMESTAMP('%Y-%m-%d', capture_date, 'America/Los_Angeles')) AS ",
-      "full_query": "SELECT COUNT(*) as row_count FROM (\nSELECT\n  DATE(FORMAT_TIMESTAMP('%Y-%m-%d', capture_date, 'America/Los_Angeles')) AS creation_date,\n  CAST(FORMAT_TIMESTAMP('%H', capture_date, 'America/Los_Angeles') AS INT64) AS hour,\n  tld,\n  ROUND(AVG(position),4) AS position,\nFROM\n  `radixbi-249015.Web_Scraping.serp_godaddy`\nWHERE\n  list_type LIKE \"%V%\"\n  AND tld IN (\"online\")\n  AND LOWER(country_code) = \"us\"\n  AND DATE(FORMAT_TIMESTAMP('%Y-%m-%d', capture_date, 'America/Los_Angeles')) BETWEEN \"2024-01-01\" AND \"2026-02-09\"\nGROUP BY\n  ALL\n)",
+      "full_query": "SELECT COUNT(*) as row_count FROM (\nSELECT\n  DATE(FORMAT_TIMESTAMP('%Y-%m-%d', capture_date, 'America/Los_Angeles')) AS creation_date,\n  CAST(FORMAT_TIMESTAMP('%H', capture_date, 'America/Los_Angeles') AS INT64) AS hour,\n  tld,\n  ROUND(AVG(position),4) AS position,\nFROM\n  `radixbi-249015.Web_Scraping.serp_godaddy`\nWHERE\n  list_type LIKE \"%V%\"\n  AND tld IN (\"online\")\n  AND LOWER(country_code) = \"us\"\n  AND DATE(FORMAT_TIMESTAMP('%Y-%m-%d', capture_date, 'America/Los_Angeles')) BETWEEN \"2024-01-01\" AND \"2026-01-20\"\nGROUP BY\n  ALL\n)",
       "primary_user": "gd-optimizer-sa@radixbi-249015.iam.gserviceaccount.com",
       "primary_team": "Unknown",
-      "total_cost": 65.8201,
-      "avg_cost": 0.0082,
+      "total_cost": 62.6529,
+      "avg_cost": 0.0081,
       "max_cost": 0.0235,
-      "execution_count": 8010,
-      "total_bytes_gb": 13479.77,
-      "first_seen": "2025-12-13",
+      "execution_count": 7722,
+      "total_bytes_gb": 12831.32,
+      "first_seen": "2025-12-16",
       "last_seen": "2026-03-06",
       "waste_tag": "repeated_culprit",
       "dest_dataset": "_fffffb53dc007518623bff0766f8b1e346648863",
@@ -1867,7 +1867,7 @@ D = {
           "Use INFORMATION_SCHEMA.TABLE_STORAGE to confirm current bytes and verify reduction after changes."
         ],
         "sql_example": "-- Check if table is partitioned\nSELECT table_name, partition_expiration_days, clustering_fields\nFROM `region-us`.INFORMATION_SCHEMA.TABLES\nWHERE table_schema = 'your_dataset' AND table_name = 'your_table';\n\n-- After adding partition: filter to needed range only\nSELECT col1, col2, col3   -- replace SELECT *\nFROM your_dataset.your_table\nWHERE DATE(partition_col) >= DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY);",
-        "estimated_savings": 40.81,
+        "estimated_savings": 38.84,
         "savings_pct": 62.0,
         "priority": "Medium",
         "effort": "Low"
@@ -1879,13 +1879,13 @@ D = {
       "full_query": "SELECT `vw_premium_renewal_data`.`autorenew_type` AS `autorenew_type`,\n  `vw_premium_renewal_data`.`country` AS `country`,\n  `vw_premium_renewal_data`.`creation_date` AS `creation_date`,\n  `vw_premium_renewal_data`.`day_domains` AS `day_domains`,\n  `vw_premium_renewal_data`.`domain` AS `domain`,\n  `vw_premium_renewal_data`.`domain_id` AS `domain_id`,\n  `vw_premium_renewal_data`.`download_date` AS `download_date`,\n  `vw_premium_renewal_data`.`ecommerce` AS `ecommerce`,\n  `vw_premium_renewal_data`.`ecommercequality` AS `ecommercequality`,\n  `vw_premium_renewal_data`.`economy_footprint` AS `economy_footprint`,\n  `vw_premium_renewal_data`.`expiry_date` AS `expiry_date`,\n  `vw_premium_renewal_data`.`gibb_score` AS `gibb_score`,\n  `vw_premium_renewal_data`.`hosting_country` AS `hosting_country`,\n  `vw_premium_renewal_data`.`max_date` AS `max_date`,\n  `vw_premium_renewal_data`.`mxdomain` AS `mxdomain`,\n  `vw_premium_renewal_data`.`nameserver` AS `nameserver`,\n  `vw_premium_renewal_data`.`online` AS `online`,\n  `vw_premium_renewal_data`.`pattern` AS `pattern`,\n  `vw_premium_renewal_data`.`pattern_domain_count` AS `pattern_domain_count`,\n  `vw_premium_renewal_data`.`predicted_renewal_rate` AS `predicted_renewal_rate`,\n  `vw_premium_renewal_data`.`predictions_domain_id` AS `predictions_domain_id`,\n  `vw_premium_renewal_data`.`predictions_renewal_type` AS `predictions_renewal_type`,\n  `vw_premium_renewal_data`.`reg_arpt` AS `reg_arpt`,\n  `vw_premium_renewal_data`.`reg_period` AS `reg_period`,\n  `vw_premium_renewal_data`.`reg_revenue` AS `reg_revenue`,\n  `vw_premium_renewal_data`.`registrar` AS `registrar`,\n  `vw_premium_renewal_data`.`renew_arpt` AS `renew_arpt`,\n  `vw_premium_renewal_data`.`renew_date` AS `renew_date`,\n  `vw_premium_renewal_data`.`renew_period` AS `renew_period`,\n  `vw_premium_renewal_data`.`renew_revenue` AS `renew_revenue`,\n  `vw_premium_renewal_data`.`renew_type` AS `renew_type`,\n  `vw_premium_renewal_data`.`renewal_id` AS `renewal_id`,\n  `vw_premium_renewal_data`.`renewal_status` AS `renewal_status`,\n  `vw_premium_renewal_data`.`renewal_type` AS `renewal_type`,\n  `vw_premium_renewal_data`.`renewalprobability` AS `renewalprobability`,\n  `vw_premium_renewal_data`.`renewed_count` AS `renewed_count`,\n  `vw_premium_renewal_data`.`reseller` AS `reseller`,\n  `vw_premium_renewal_data`.`reseller_country` AS `reseller_country`,\n  `vw_premium_renewal_data`.`response` AS `response`,\n  `vw_premium_renewal_data`.`scandate` AS `scandate`,\n  `vw_premium_renewal_data`.`siccode` AS `siccode`,\n  `vw_premium_renewal_data`.`sicdivision` AS `sicdivision`,\n  `vw_premium_renewal_data`.`sicmajorgroup` AS `sicmajorgroup`,\n  `vw_premium_renewal_data`.`sld_length` AS `sld_length`,\n  `vw_premium_renewal_data`.`sld_type2` AS `sld_type2`,\n  `vw_premium_renewal_data`.`sld_type` AS `sld_type`,\n  `vw_premium_renewal_data`.`ssl` AS `ssl`,\n  `vw_premium_renewal_data`.`tier_price` AS `tier_price`,\n  `vw_premium_renewal_data`.`tld` AS `tld`,\n  `vw_premium_renewal_data`.`websitetype` AS `websitetype`\nFROM `radixbi-249015.tableau`.`vw_premium_renewal_data` `vw_premium_renewal_data`",
       "primary_user": "prod-tableau-premium@radixbi-249015.iam.gserviceaccount.com",
       "primary_team": "Unknown",
-      "total_cost": 64.359,
-      "avg_cost": 0.2219,
-      "max_cost": 0.2232,
-      "execution_count": 290,
-      "total_bytes_gb": 13180.8,
-      "first_seen": "2025-12-13",
-      "last_seen": "2026-03-12",
+      "total_cost": 62.4016,
+      "avg_cost": 0.2221,
+      "max_cost": 0.2441,
+      "execution_count": 281,
+      "total_bytes_gb": 12780.01,
+      "first_seen": "2025-12-16",
+      "last_seen": "2026-03-15",
       "waste_tag": "repeated_culprit",
       "dest_dataset": "_d50e4a88bf7aa60f5e0643cddbc6d5dbba776113",
       "optimization": {
@@ -1895,7 +1895,7 @@ D = {
         ],
         "headline": "Enable BigQuery BI Engine caching for this dashboard dataset",
         "bullets": [
-          "Query runs 290\u00d7 with column-alias patterns typical of Looker, Tableau, or Data Studio. Dashboard tools re-run the same query on every page load or scheduled refresh.",
+          "Query runs 281\u00d7 with column-alias patterns typical of Looker, Tableau, or Data Studio. Dashboard tools re-run the same query on every page load or scheduled refresh.",
           "Enable BigQuery BI Engine (1\u201310 GB reservation) on the dataset. Repeated identical queries are served from in-memory cache \u2014 scan cost drops to near zero.",
           "In Looker: add `cache: yes` and `persist_for: \"4 hours\"` on the Explore block to prevent re-querying on every dashboard open.",
           "In Tableau: set Extract refresh schedule instead of Live connection, or use Tableau's Materialized Views feature.",
@@ -1903,38 +1903,37 @@ D = {
           "Add clustering on the most-filtered columns (country, autorenew_type) to speed up filtered drilldowns even on cache misses."
         ],
         "sql_example": "-- Materialized view for BI tools (refreshes daily)\nCREATE MATERIALIZED VIEW your_dataset.mv_renewal_summary\nPARTITION BY month\nCLUSTER BY country, autorenew_type\nOPTIONS (enable_refresh = true, refresh_interval_minutes = 60)\nAS\nSELECT\n  DATE_TRUNC(renewal_date, MONTH) AS month,\n  country, autorenew_type,\n  COUNT(*) AS renewals,\n  SUM(revenue) AS total_revenue\nFROM vw_premium_renewal_data\nGROUP BY 1, 2, 3;",
-        "estimated_savings": 43.76,
+        "estimated_savings": 42.43,
         "savings_pct": 68.0,
         "priority": "Medium",
         "effort": "Low"
       }
     },
     {
-      "hash": "9d9f5318e296",
-      "query_preview": "UPDATE whoisdb.other_tld a SET deleted = TRUE FROM (\n            SELECT *, ROW_NUMBER() OVER (PARTITION BY domain ORDER ",
-      "full_query": "UPDATE whoisdb.other_tld a SET deleted = TRUE FROM (\n            SELECT *, ROW_NUMBER() OVER (PARTITION BY domain ORDER BY creation_date DESC) row_number FROM whoisdb.other_tld) b\n            WHERE b.row_number > 1 AND CONCAT(a.domain,DATE(a.creation_date)) = CONCAT(b.domain,DATE(b.creation_date))",
+      "hash": "ef664fb97af2",
+      "query_preview": "update whoisdb.other_tld set endswith = REPLACE(REGEXP_EXTRACT(lower(domain) ,'gmx\\\\.|leclerc\\\\.|aarp\\\\.|abb\\\\.|abbott\\\\",
+      "full_query": "update whoisdb.other_tld set endswith = REPLACE(REGEXP_EXTRACT(lower(domain) ,'gmx\\\\.|leclerc\\\\.|aarp\\\\.|abb\\\\.|abbott\\\\.|abbvie\\\\.|able\\\\.|xn--mgbca7dzdo\\\\.|abudhabi\\\\.|kyoto\\\\.|accenture\\\\.|aco\\\\.|aetna\\\\.|jio\\\\.|airbus\\\\.|aeg\\\\.|tmall\\\\.|taobao\\\\.|alipay\\\\.|alibaba\\\\.|allfinanz\\\\.|allstate\\\\.|ally\\\\.|alstom\\\\.|got\\\\.|xn--fct429k\\\\.|xn--jlq480n2rg\\\\.|xn--bck1b9a5dre4c\\\\.|jot\\\\.|xn--cckwcxetd\\\\.|song\\\\.|xn--jvr189m\\\\.|wanggou\\\\.|kindle\\\\.|fire\\\\.|wow\\\\.|moi\\\\.|amazon\\\\.|prime\\\\.|xn--gckr3f0f\\\\.|silk\\\\.|joy\\\\.|fast\\\\.|xn--gk3at1e\\\\.|bot\\\\.|save\\\\.|deal\\\\.|coupon\\\\.|spot\\\\.|author\\\\.|now\\\\.|talk\\\\.|xn--cck2b3b\\\\.|yamaxun\\\\.|zappos\\\\.|aws\\\\.|xn--rovu88b\\\\.|room\\\\.|xn--1ck2e1b\\\\.|secure\\\\.|buy\\\\.|zero\\\\.|pay\\\\.|safe\\\\.|tunes\\\\.|book\\\\.|call\\\\.|free\\\\.|read\\\\.|pin\\\\.|like\\\\.|xn--eckvdtc9d\\\\.|audible\\\\.|imdb\\\\.|hot\\\\.|circle\\\\.|tushu\\\\.|you\\\\.|smile\\\\.|aaa\\\\.|bible\\\\.|lifeinsurance\\\\.|amex\\\\.|open\\\\.|americanexpress\\\\.|cpa\\\\.|aig\\\\.|americanfamily\\\\.|amfam\\\\.|amica\\\\.|apple\\\\.|aquarelle\\\\.|xn--mgba3a3ejt\\\\.|aramco\\\\.|cloud\\\\.|spa\\\\.|gal\\\\.|arte\\\\.|bzh\\\\.|audi\\\\.|anz\\\\.|afl\\\\.|auspost\\\\.|lamborghini\\\\.|axa\\\\.|baidu\\\\.|bbva\\\\.|bradesco\\\\.|bofa\\\\.|barclaycard\\\\.|barclays\\\\.|mini\\\\.|bmw\\\\.|bbt\\\\.|bestbuy\\\\.|beats\\\\.|xn--kput3i\\\\.|xn--vuq861b\\\\.|best\\\\.|airtel\\\\.|bharti\\\\.|eco\\\\.|bloomberg\\\\.|bnpparibas\\\\.|boehringer\\\\.|booking\\\\.|hotels\\\\.|bostik\\\\.|bridgestone\\\\.|firestone\\\\.|bms\\\\.|bbc\\\\.|brother\\\\.|okinawa\\\\.|ryukyu\\\\.|lacaixa\\\\.|cam\\\\.|analytics\\\\.|canon\\\\.|capitalone\\\\.|caravan\\\\.|cbre\\\\.|broadway\\\\.|cfa\\\\.|chanel\\\\.|xn--qcka1pmc\\\\.|how\\\\.|dclk\\\\.|youtube\\\\.|gbiz\\\\.|esq\\\\.|drive\\\\.|here\\\\.|chrome\\\\.|android\\\\.|goog\\\\.|search\\\\.|ing\\\\.|zip\\\\.|hangout\\\\.|xn--flw351e\\\\.|cal\\\\.|page\\\\.|soy\\\\.|gle\\\\.|docs\\\\.|play\\\\.|foo\\\\.|mov\\\\.|eat\\\\.|prof\\\\.|guge\\\\.|channel\\\\.|ads\\\\.|fly\\\\.|meme\\\\.|dad\\\\.|prod\\\\.|app\\\\.|phd\\\\.|meet\\\\.|new\\\\.|xn--q9jyb4c\\\\.|boo\\\\.|day\\\\.|gmail\\\\.|google\\\\.|dev\\\\.|nexus\\\\.|map\\\\.|rsvp\\\\.|xn--zfr164b\\\\.|xn--55qw42g\\\\.|xn--8y0a063a\\\\.|unicom\\\\.|chintai\\\\.|cisco\\\\.|citadel\\\\.|citic\\\\.|xn--fiq64b\\\\.|citi\\\\.|banamex\\\\.|helsinki\\\\.|paris\\\\.|clubmed\\\\.|case\\\\.|corsica\\\\.|gent\\\\.|netbank\\\\.|cba\\\\.|commbank\\\\.|xn--io0a7i\\\\.|xn--55qx5d\\\\.|madrid\\\\.|xn--80asehdb\\\\.|xn--mgbab2bd\\\\.|xn--80aswg\\\\.|olayangroup\\\\.|xn--mgba7c0bbn0a\\\\.|olayan\\\\.|crown\\\\.|dnp\\\\.|dell\\\\.|deloitte\\\\.|delta\\\\.|dhl\\\\.|dvag\\\\.|pohl\\\\.|xn--vermgensberater-ctb\\\\.|xn--vermgensberatung-pwb\\\\.|discover\\\\.|ott\\\\.|latino\\\\.|dtv\\\\.|mobile\\\\.|data\\\\.|blockbuster\\\\.|phone\\\\.|dish\\\\.|dot\\\\.|ollo\\\\.|abc\\\\.|vlaanderen\\\\.|brussels\\\\.|global\\\\.|hiphop\\\\.|kiwi\\\\.|scot\\\\.|xn--otu796d\\\\.|vegas\\\\.|berlin\\\\.|career\\\\.|qpon\\\\.|creditunion\\\\.|gift\\\\.|kids\\\\.|cologne\\\\.|koeln\\\\.|music\\\\.|realestate\\\\.|saarland\\\\.|ruhr\\\\.|buzz\\\\.|dubai\\\\.|nico\\\\.|dupont\\\\.|xn--3bst00m\\\\.|edeka\\\\.|xin\\\\.|lilly\\\\.|pars\\\\.|desi\\\\.|xn--mgbt3dhd\\\\.|wed\\\\.|nowruz\\\\.|tci\\\\.|shia\\\\.|rio\\\\.|erni\\\\.|eurovision\\\\.|radio\\\\.|cern\\\\.|xn--30rr7y\\\\.|extraspace\\\\.|fage\\\\.|fairwinds\\\\.|farmers\\\\.|jeep\\\\.|fedex\\\\.|crs\\\\.|forum\\\\.|observer\\\\.|ferrero\\\\.|ferrari\\\\.|fidelity\\\\.|firmdale\\\\.|flickr\\\\.|flir\\\\.|agakhan\\\\.|imamat\\\\.|akdn\\\\.|ismaili\\\\.|ford\\\\.|lincoln\\\\.|xn--80adxhks\\\\.|moscow\\\\.|fox\\\\.|fresenius\\\\.|frl\\\\.|frontier\\\\.|ftr\\\\.|insurance\\\\.|bank\\\\.|fujitsu\\\\.|basketball\\\\.|gallo\\\\.|barefoot\\\\.|gallup\\\\.|gea\\\\.|amsterdam\\\\.|sport\\\\.|accountant\\\\.|science\\\\.|bid\\\\.|stream\\\\.|men\\\\.|date\\\\.|racing\\\\.|party\\\\.|download\\\\.|cricket\\\\.|faith\\\\.|review\\\\.|trade\\\\.|loan\\\\.|webcam\\\\.|win\\\\.|xn--5tzm5g\\\\.|globo\\\\.|nagoya\\\\.|shop\\\\.|yokohama\\\\.|gmo\\\\.|tokyo\\\\.|ggee\\\\.|grainger\\\\.|xn--efvy88h\\\\.|xn--1qqw23a\\\\.|xn--xhq521b\\\\.|gucci\\\\.|lundbeck\\\\.|hamburg\\\\.|hbo\\\\.|hdfcbank\\\\.|xn--4gbrim\\\\.|hermes\\\\.|hisamitsu\\\\.|hitachi\\\\.|thd\\\\.|homedepot\\\\.|honda\\\\.|cipriani\\\\.|hdfc\\\\.|hsbc\\\\.|dvr\\\\.|hughes\\\\.|sling\\\\.|hyatt\\\\.|hyundai\\\\.|theater\\\\.|exposed\\\\.|taxi\\\\.|coffee\\\\.|express\\\\.|support\\\\.|vision\\\\.|tires\\\\.|fish\\\\.|group\\\\.|red\\\\.|gallery\\\\.|repair\\\\.|money\\\\.|vin\\\\.|gratis\\\\.|furniture\\\\.|center\\\\.|bingo\\\\.|international\\\\.|energy\\\\.|digital\\\\.|properties\\\\.|shiksha\\\\.|cleaning\\\\.|fitness\\\\.|bio\\\\.|software\\\\.|delivery\\\\.|land\\\\.|university\\\\.|actor\\\\.|dentist\\\\.|photos\\\\.|discount\\\\.|green\\\\.|town\\\\.|florist\\\\.|xn--czrs0t\\\\.|degree\\\\.|bet\\\\.|community\\\\.|restaurant\\\\.|equipment\\\\.|watches\\\\.|tips\\\\.|coupons\\\\.|games\\\\.|graphics\\\\.|cheap\\\\.|guru\\\\.|associates\\\\.|haus\\\\.|clinic\\\\.|enterprises\\\\.|boutique\\\\.|finance\\\\.|dog\\\\.|deals\\\\.|archi\\\\.|partners\\\\.|directory\\\\.|rocks\\\\.|maison\\\\.|legal\\\\.|blue\\\\.|run\\\\.|engineer\\\\.|kaufen\\\\.|holiday\\\\.|video\\\\.|chat\\\\.|parts\\\\.|forex\\\\.|builders\\\\.|recipes\\\\.|zone\\\\.|pictures\\\\.|photography\\\\.|capital\\\\.|dating\\\\.|management\\\\.|forsale\\\\.|voto\\\\.|school\\\\.|market\\\\.|kim\\\\.|farm\\\\.|rip\\\\.|limo\\\\.|kitchen\\\\.|watch\\\\.|insure\\\\.|expert\\\\.|direct\\\\.|fan\\\\.|show\\\\.|supplies\\\\.|ninja\\\\.|industries\\\\.|email\\\\.|agency\\\\.|style\\\\.|doctor\\\\.|team\\\\.|auction\\\\.|attorney\\\\.|contractors\\\\.|creditcard\\\\.|house\\\\.|engineering\\\\.|tienda\\\\.|diamonds\\\\.|services\\\\.|tax\\\\.|city\\\\.|solar\\\\.|democrat\\\\.|army\\\\.|poker\\\\.|rentals\\\\.|care\\\\.|bike\\\\.|tools\\\\.|dental\\\\.|futbol\\\\.|promo\\\\.|glass\\\\.|fyi\\\\.|immo\\\\.|soccer\\\\.|solutions\\\\.|family\\\\.|band\\\\.|xn--vhquv\\\\.|tours\\\\.|hockey\\\\.|works\\\\.|reviews\\\\.|jetzt\\\\.|training\\\\.|wtf\\\\.|reise\\\\.|vet\\\\.|dance\\\\.|jewelry\\\\.|viajes\\\\.|mba\\\\.|wine\\\\.|sale\\\\.|immobilien\\\\.|church\\\\.|company\\\\.|salon\\\\.|ventures\\\\.|black\\\\.|memorial\\\\.|cards\\\\.|apartments\\\\.|shopping\\\\.|football\\\\.|clothing\\\\.|shoes\\\\.|institute\\\\.|education\\\\.|life\\\\.|world\\\\.|tennis\\\\.|gifts\\\\.|vacations\\\\.|claims\\\\.|exchange\\\\.|marketing\\\\.|plumbing\\\\.|business\\\\.|rehab\\\\.|airforce\\\\.|technology\\\\.|systems\\\\.|singles\\\\.|bargains\\\\.|productions\\\\.|codes\\\\.|vote\\\\.|voyage\\\\.|catering\\\\.|broker\\\\.|supply\\\\.|pet\\\\.|events\\\\.|surgery\\\\.|cafe\\\\.|lgbt\\\\.|network\\\\.|gmbh\\\\.|report\\\\.|credit\\\\.|place\\\\.|ski\\\\.|news\\\\.|cash\\\\.|coach\\\\.|irish\\\\.|golf\\\\.|computer\\\\.|camera\\\\.|organic\\\\.|gold\\\\.|llc\\\\.|schule\\\\.|cab\\\\.|lotto\\\\.|republican\\\\.|investments\\\\.|guide\\\\.|camp\\\\.|gripe\\\\.|live\\\\.|studio\\\\.|lease\\\\.|construction\\\\.|domains\\\\.|condos\\\\.|ltd\\\\.|social\\\\.|healthcare\\\\.|xn--fjq720a\\\\.|lighting\\\\.|xn--6frz82g\\\\.|plus\\\\.|pub\\\\.|movie\\\\.|consulting\\\\.|pizza\\\\.|mortgage\\\\.|holdings\\\\.|academy\\\\.|today\\\\.|financial\\\\.|estate\\\\.|fail\\\\.|pink\\\\.|villas\\\\.|careers\\\\.|media\\\\.|lawyer\\\\.|xn--unup4y\\\\.|contact\\\\.|moda\\\\.|markets\\\\.|navy\\\\.|loans\\\\.|flights\\\\.|accountants\\\\.|toys\\\\.|limited\\\\.|cool\\\\.|fund\\\\.|hospital\\\\.|sarl\\\\.|trading\\\\.|cruises\\\\.|reisen\\\\.|casino\\\\.|ieee\\\\.|ifm\\\\.|ikano\\\\.|zara\\\\.|icbc\\\\.|ooo\\\\.|llp\\\\.|inc\\\\.|dealer\\\\.|box\\\\.|ice\\\\.|moe\\\\.|earth\\\\.|weather\\\\.|weatherchannel\\\\.|ibm\\\\.|xn--ngbc5azd\\\\.|xn--czr694b\\\\.|xn--imr513n\\\\.|property\\\\.|living\\\\.|lifestyle\\\\.|trust\\\\.|realty\\\\.|vana\\\\.|diy\\\\.|click\\\\.|hiv\\\\.|country\\\\.|food\\\\.|sexy\\\\.|ltda\\\\.|srl\\\\.|mint\\\\.|intuit\\\\.|ipiranga\\\\.|onl\\\\.|rich\\\\.|lds\\\\.|mormon\\\\.|istanbul\\\\.|ist\\\\.|itau\\\\.|itv\\\\.|jaguar\\\\.|landrover\\\\.|nhk\\\\.|jprs\\\\.|jcb\\\\.|top\\\\.|jnj\\\\.|gdn\\\\.|lasalle\\\\.|jll\\\\.|jpmorgan\\\\.|chase\\\\.|juniper\\\\.|zuerich\\\\.|kddi\\\\.|xn--w4r85el8fhu5dnra\\\\.|xn--w4rs40l\\\\.|kuokgroup\\\\.|kerryhotels\\\\.|kerryproperties\\\\.|kia\\\\.|xn--ses554g\\\\.|blog\\\\.|komatsu\\\\.|kpn\\\\.|xn--kcrx77d1x4a\\\\.|philips\\\\.|kosher\\\\.|kpmg\\\\.|kred\\\\.|krd\\\\.|kfh\\\\.|xn--ngbe9e0a\\\\.|latrobe\\\\.|lanxess\\\\.|tube\\\\.|xn--ngbrx\\\\.|arab\\\\.|lefrak\\\\.|lego\\\\.|tatar\\\\.|locus\\\\.|lotte\\\\.|lplfinancial\\\\.|lpl\\\\.|luxury\\\\.|man\\\\.|marriott\\\\.|mit\\\\.|jmp\\\\.|mattel\\\\.|mckinsey\\\\.|med\\\\.|love\\\\.|emerck\\\\.|microsoft\\\\.|azure\\\\.|office\\\\.|skype\\\\.|hotmail\\\\.|xbox\\\\.|bing\\\\.|windows\\\\.|bayern\\\\.|london\\\\.|adult\\\\.|porn\\\\.|nrw\\\\.|sex\\\\.|mitsubishi\\\\.|mlb\\\\.|baseball\\\\.|mma\\\\.|monash\\\\.|film\\\\.|moto\\\\.|msd\\\\.|merckmsd\\\\.|mtn\\\\.|mtr\\\\.|barcelona\\\\.|bcn\\\\.|maif\\\\.|pharmacy\\\\.|reit\\\\.|ubank\\\\.|nab\\\\.|xn--g2xx48c\\\\.|nba\\\\.|nec\\\\.|xn--mxtq1m\\\\.|netflix\\\\.|neustar\\\\.|next\\\\.|nextdirect\\\\.|nfl\\\\.|nike\\\\.|nikon\\\\.|nissay\\\\.|ntt\\\\.|datsun\\\\.|infiniti\\\\.|nissan\\\\.|nokia\\\\.|wales\\\\.|cymru\\\\.|link\\\\.|nra\\\\.|goo\\\\.|final\\\\.|bom\\\\.|aol\\\\.|obi\\\\.|one\\\\.|frogans\\\\.|oracle\\\\.|java\\\\.|orange\\\\.|locker\\\\.|osaka\\\\.|otsuka\\\\.|ovh\\\\.|richardli\\\\.|panasonic\\\\.|pccw\\\\.|xn--fzys8d69uvgm\\\\.|hkt\\\\.|pfizer\\\\.|physio\\\\.|pictet\\\\.|ping\\\\.|pioneer\\\\.|build\\\\.|pnc\\\\.|quebec\\\\.|politie\\\\.|xn--tiq49xqyj\\\\.|xn--mgbi4ecexp\\\\.|xn--80aqecdr1a\\\\.|catholic\\\\.|praxi\\\\.|pwc\\\\.|progressive\\\\.|prudential\\\\.|pru\\\\.|xn--i1b6b1a6a2e\\\\.|charity\\\\.|ngo\\\\.|giving\\\\.|ong\\\\.|xn--nqv7f\\\\.|foundation\\\\.|xn--nqv7fs00ema\\\\.|xn--c1avg\\\\.|gives\\\\.|tirol\\\\.|wien\\\\.|bar\\\\.|rest\\\\.|mango\\\\.|eus\\\\.|calvinklein\\\\.|shouji\\\\.|xihuan\\\\.|yun\\\\.|anquan\\\\.|realtor\\\\.|redstone\\\\.|alsace\\\\.|courses\\\\.|compare\\\\.|boston\\\\.|surf\\\\.|beer\\\\.|tattoo\\\\.|fit\\\\.|miami\\\\.|rodeo\\\\.|health\\\\.|wedding\\\\.|vip\\\\.|design\\\\.|abogado\\\\.|luxe\\\\.|yoga\\\\.|select\\\\.|garden\\\\.|cooking\\\\.|study\\\\.|work\\\\.|blackfriday\\\\.|fashion\\\\.|casa\\\\.|fishing\\\\.|vodka\\\\.|law\\\\.|club\\\\.|photo\\\\.|horse\\\\.|dds\\\\.|reliance\\\\.|ril\\\\.|gop\\\\.|sas\\\\.|genting\\\\.|ricoh\\\\.|xn--9et52u\\\\.|bosch\\\\.|rexroth\\\\.|rogers\\\\.|fido\\\\.|xn--p1acf\\\\.|rwe\\\\.|safety\\\\.|weber\\\\.|sakura\\\\.|samsung\\\\.|xn--cg4bki\\\\.|sandvik\\\\.|sandvikcoromant\\\\.|walter\\\\.|sanofi\\\\.|sap\\\\.|viva\\\\.|stcgroup\\\\.|stc\\\\.|saxo\\\\.|schaeffler\\\\.|cuisinella\\\\.|schmidt\\\\.|scholarships\\\\.|schwarz\\\\.|lidl\\\\.|seat\\\\.|seek\\\\.|epson\\\\.|sener\\\\.|seven\\\\.|sew\\\\.|shangrila\\\\.|xn--5su34j936bgsg\\\\.|sharp\\\\.|shell\\\\.|cfd\\\\.|sbs\\\\.|bond\\\\.|icu\\\\.|cyou\\\\.|xn--9krt00a\\\\.|weibo\\\\.|sina\\\\.|sky\\\\.|smart\\\\.|sncf\\\\.|sfr\\\\.|softbank\\\\.|sohu\\\\.|playstation\\\\.|sony\\\\.|xn--nyqy26a\\\\.|xn--rhqv96g\\\\.|stada\\\\.|staples\\\\.|star\\\\.|nowtv\\\\.|sbi\\\\.|statebank\\\\.|statefarm\\\\.|sydney\\\\.|stockholm\\\\.|suzuki\\\\.|swiss\\\\.|norton\\\\.|tab\\\\.|taipei\\\\.|target\\\\.|tatamotors\\\\.|tdk\\\\.|tiaa\\\\.|ericsson\\\\.|vivo\\\\.|xn--b4w605ferd\\\\.|temasek\\\\.|teva\\\\.|bcg\\\\.|mls\\\\.|cbn\\\\.|nyc\\\\.|melbourne\\\\.|lamer\\\\.|clinique\\\\.|origins\\\\.|xn--d1acj3b\\\\.|athleta\\\\.|gap\\\\.|goodyear\\\\.|dunlop\\\\.|scb\\\\.|swatch\\\\.|omega\\\\.|tjmaxx\\\\.|marshalls\\\\.|tjx\\\\.|homesense\\\\.|homegoods\\\\.|winners\\\\.|tkmaxx\\\\.|vanguard\\\\.|xn--fiq228c5hs\\\\.|xn--3ds443g\\\\.|versicherung\\\\.|wiki\\\\.|gay\\\\.|ink\\\\.|pid\\\\.|feedback\\\\.|toray\\\\.|toshiba\\\\.|total\\\\.|lexus\\\\.|toyota\\\\.|redumbrella\\\\.|travelersinsurance\\\\.|travelers\\\\.|trv\\\\.|tui\\\\.|tvs\\\\.|xn--6qq986b3xl\\\\.|uol\\\\.|ubs\\\\.|art\\\\.|juegos\\\\.|help\\\\.|ups\\\\.|voting\\\\.|xn--c2br7g\\\\.|xn--mk1bu44c\\\\.|xn--t60b56a\\\\.|xn--tckwe\\\\.|xn--fhbei\\\\.|xn--j1aef\\\\.|xn--9dbq2a\\\\.|xn--pssy2u\\\\.|xn--3pxu8k\\\\.|xn--11b4c3d\\\\.|xn--42c2d9a\\\\.|comsec\\\\.|verisign\\\\.|vig\\\\.|cruise\\\\.|viking\\\\.|virgin\\\\.|visa\\\\.|volvo\\\\.|sucks\\\\.|grocery\\\\.|asda\\\\.|walmart\\\\.|george\\\\.|samsclub\\\\.|menu\\\\.|weir\\\\.|bauhaus\\\\.|whoswho\\\\.|williamhill\\\\.|wme\\\\.|wolterskluwer\\\\.|woodside\\\\.|rugby\\\\.|wtc\\\\.|xerox\\\\.|diet\\\\.|ceo\\\\.|hosting\\\\.|college\\\\.|game\\\\.|baby\\\\.|theatre\\\\.|protection\\\\.|beauty\\\\.|motorcycles\\\\.|auto\\\\.|cars\\\\.|christmas\\\\.|rent\\\\.|security\\\\.|boats\\\\.|quest\\\\.|storage\\\\.|mom\\\\.|audio\\\\.|tickets\\\\.|xyz\\\\.|flowers\\\\.|homes\\\\.|makeup\\\\.|hair\\\\.|skin\\\\.|monster\\\\.|lol\\\\.|yachts\\\\.|guitars\\\\.|autos\\\\.|lat\\\\.|car\\\\.|pics\\\\.|yahoo\\\\.|yandex\\\\.|goldpoint\\\\.|yodobashi\\\\.|africa\\\\.|joburg\\\\.|durban\\\\.|capetown\\\\.|ren\\\\.|fans\\\\.|xn--czru2d\\\\.|xn--hxt814e\\\\.|wang\\\\.|xn--45q11c\\\\.|store\\\\.|fun\\\\.|uno\\\\.|space\\\\.|online\\\\.|site\\\\.|tech\\\\.|host\\\\.|website\\\\.|press\\\\.|dreyer\\\\.|active\\\\.|hanjiro\\\\.|mtpc\\\\.|xperia\\\\.|everbank\\\\.|contactEmail\\\\.|statoil\\\\.|boots\\\\.|edu\\\\.|flsmidth\\\\.|spiegel\\\\.|mallorca\\\\.|panerai\\\\.|orientexpress\\\\.|duns\\\\.|movistar\\\\.|goodhands\\\\.|starhub\\\\.|honeywell\\\\.|chloe\\\\.|bnl\\\\.|ladbrokes\\\\.|doha\\\\.|jlc\\\\.|zippo\\\\.|pamperedchef\\\\.|mopar\\\\.|montblanc\\\\.|mutuelle\\\\.|piaget\\\\.|chrysler\\\\.|mcd\\\\.|telecity\\\\.|vista\\\\.|srt\\\\.|mcdonalds\\\\.|meo\\\\.|dodge\\\\.|iinet\\\\.|lancome\\\\.|uconnect\\\\.|xn--mgbb9fbpob\\\\.|telefonica\\\\.|sapo\\\\.|epost\\\\.|cartier\\\\.|mobily\\\\.|cookingchannel\\\\.|iselect\\\\.|linde\\\\.|intel\\\\.|lixil\\\\.|afamilycompany\\\\.|shriram\\\\.|kerrylogistics\\\\.|coop\\\\.|guardian\\\\.|raid\\\\.|dabur\\\\.|museum\\\\.|northwesternmutual\\\\.|glade\\\\.|kinder\\\\.|bugatti\\\\.|vistaprint\\\\.|tiffany\\\\.|esurance\\\\.|natura\\\\.|rmit\\\\.|jobs\\\\.|mutual\\\\.|liaison\\\\.|blanco\\\\.|ses\\\\.|lancaster\\\\.|xxx\\\\.|travel\\\\.|cat\\\\.|hoteles\\\\.|duck\\\\.|pro\\\\.|frontdoor\\\\.|adac\\\\.|lipsy\\\\.|abarth\\\\.|bentley\\\\.|scor\\\\.|sca\\\\.|warman\\\\.|iwc\\\\.|lupin\\\\.|cbs\\\\.|csc\\\\.|nadex\\\\.|avianca\\\\.|aigo\\\\.|loft\\\\.|cancerresearch\\\\.|showtime\\\\.|ceb\\\\.|comcast\\\\.|caseih\\\\.|iveco\\\\.|pramerica\\\\.|xfinity\\\\.|newholland\\\\.|alfaromeo\\\\.|macys\\\\.|etisalat\\\\.|fiat\\\\.|xn--estv75g\\\\.|rocher\\\\.|lancia\\\\.|maserati\\\\.|xn--mgbaakc7dvf\\\\.|nationwide\\\\.|travelchannel\\\\.|foodnetwork\\\\.|off\\\\.|rightathome\\\\.|budapest\\\\.|jcp\\\\.|metlife\\\\.|swiftcover\\\\.|onyourside\\\\.|hgtv\\\\.|scjohnson\\\\.|cityeats\\\\.|symantec\\\\.|xn--pbt977c\\\\.|qvc\\\\.|xn--kpu716f\\\\.|bananarepublic\\\\.|spreadbetting\\\\.|oldnavy\\\\.|xn--jlq61u9w7b\\\\.|passagens\\\\.|xn--3oq18vl8pn36a\\\\.|vuelos\\\\.|volkswagen\\\\.|fujixerox\\\\.|post\\\\.|pw\\\\.|in.net\\\\.'),'.','') where REGEXP_CONTAINS(lower(domain),'gmx\\\\.|leclerc\\\\.|aarp\\\\.|abb\\\\.|abbott\\\\.|abbvie\\\\.|able\\\\.|xn--mgbca7dzdo\\\\.|abudhabi\\\\.|kyoto\\\\.|accenture\\\\.|aco\\\\.|aetna\\\\.|jio\\\\.|airbus\\\\.|aeg\\\\.|tmall\\\\.|taobao\\\\.|alipay\\\\.|alibaba\\\\.|allfinanz\\\\.|allstate\\\\.|ally\\\\.|alstom\\\\.|got\\\\.|xn--fct429k\\\\.|xn--jlq480n2rg\\\\.|xn--bck1b9a5dre4c\\\\.|jot\\\\.|xn--cckwcxetd\\\\.|song\\\\.|xn--jvr189m\\\\.|wanggou\\\\.|kindle\\\\.|fire\\\\.|wow\\\\.|moi\\\\.|amazon\\\\.|prime\\\\.|xn--gckr3f0f\\\\.|silk\\\\.|joy\\\\.|fast\\\\.|xn--gk3at1e\\\\.|bot\\\\.|save\\\\.|deal\\\\.|coupon\\\\.|spot\\\\.|author\\\\.|now\\\\.|talk\\\\.|xn--cck2b3b\\\\.|yamaxun\\\\.|zappos\\\\.|aws\\\\.|xn--rovu88b\\\\.|room\\\\.|xn--1ck2e1b\\\\.|secure\\\\.|buy\\\\.|zero\\\\.|pay\\\\.|safe\\\\.|tunes\\\\.|book\\\\.|call\\\\.|free\\\\.|read\\\\.|pin\\\\.|like\\\\.|xn--eckvdtc9d\\\\.|audible\\\\.|imdb\\\\.|hot\\\\.|circle\\\\.|tushu\\\\.|you\\\\.|smile\\\\.|aaa\\\\.|bible\\\\.|lifeinsurance\\\\.|amex\\\\.|open\\\\.|americanexpress\\\\.|cpa\\\\.|aig\\\\.|americanfamily\\\\.|amfam\\\\.|amica\\\\.|apple\\\\.|aquarelle\\\\.|xn--mgba3a3ejt\\\\.|aramco\\\\.|cloud\\\\.|spa\\\\.|gal\\\\.|arte\\\\.|bzh\\\\.|audi\\\\.|anz\\\\.|afl\\\\.|auspost\\\\.|lamborghini\\\\.|axa\\\\.|baidu\\\\.|bbva\\\\.|bradesco\\\\.|bofa\\\\.|barclaycard\\\\.|barclays\\\\.|mini\\\\.|bmw\\\\.|bbt\\\\.|bestbuy\\\\.|beats\\\\.|xn--kput3i\\\\.|xn--vuq861b\\\\.|best\\\\.|airtel\\\\.|bharti\\\\.|eco\\\\.|bloomberg\\\\.|bnpparibas\\\\.|boehringer\\\\.|booking\\\\.|hotels\\\\.|bostik\\\\.|bridgestone\\\\.|firestone\\\\.|bms\\\\.|bbc\\\\.|brother\\\\.|okinawa\\\\.|ryukyu\\\\.|lacaixa\\\\.|cam\\\\.|analytics\\\\.|canon\\\\.|capitalone\\\\.|caravan\\\\.|cbre\\\\.|broadway\\\\.|cfa\\\\.|chanel\\\\.|xn--qcka1pmc\\\\.|how\\\\.|dclk\\\\.|youtube\\\\.|gbiz\\\\.|esq\\\\.|drive\\\\.|here\\\\.|chrome\\\\.|android\\\\.|goog\\\\.|search\\\\.|ing\\\\.|zip\\\\.|hangout\\\\.|xn--flw351e\\\\.|cal\\\\.|page\\\\.|soy\\\\.|gle\\\\.|docs\\\\.|play\\\\.|foo\\\\.|mov\\\\.|eat\\\\.|prof\\\\.|guge\\\\.|channel\\\\.|ads\\\\.|fly\\\\.|meme\\\\.|dad\\\\.|prod\\\\.|app\\\\.|phd\\\\.|meet\\\\.|new\\\\.|xn--q9jyb4c\\\\.|boo\\\\.|day\\\\.|gmail\\\\.|google\\\\.|dev\\\\.|nexus\\\\.|map\\\\.|rsvp\\\\.|xn--zfr164b\\\\.|xn--55qw42g\\\\.|xn--8y0a063a\\\\.|unicom\\\\.|chintai\\\\.|cisco\\\\.|citadel\\\\.|citic\\\\.|xn--fiq64b\\\\.|citi\\\\.|banamex\\\\.|helsinki\\\\.|paris\\\\.|clubmed\\\\.|case\\\\.|corsica\\\\.|gent\\\\.|netbank\\\\.|cba\\\\.|commbank\\\\.|xn--io0a7i\\\\.|xn--55qx5d\\\\.|madrid\\\\.|xn--80asehdb\\\\.|xn--mgbab2bd\\\\.|xn--80aswg\\\\.|olayangroup\\\\.|xn--mgba7c0bbn0a\\\\.|olayan\\\\.|crown\\\\.|dnp\\\\.|dell\\\\.|deloitte\\\\.|delta\\\\.|dhl\\\\.|dvag\\\\.|pohl\\\\.|xn--vermgensberater-ctb\\\\.|xn--vermgensberatung-pwb\\\\.|discover\\\\.|ott\\\\.|latino\\\\.|dtv\\\\.|mobile\\\\.|data\\\\.|blockbuster\\\\.|phone\\\\.|dish\\\\.|dot\\\\.|ollo\\\\.|abc\\\\.|vlaanderen\\\\.|brussels\\\\.|global\\\\.|hiphop\\\\.|kiwi\\\\.|scot\\\\.|xn--otu796d\\\\.|vegas\\\\.|berlin\\\\.|career\\\\.|qpon\\\\.|creditunion\\\\.|gift\\\\.|kids\\\\.|cologne\\\\.|koeln\\\\.|music\\\\.|realestate\\\\.|saarland\\\\.|ruhr\\\\.|buzz\\\\.|dubai\\\\.|nico\\\\.|dupont\\\\.|xn--3bst00m\\\\.|edeka\\\\.|xin\\\\.|lilly\\\\.|pars\\\\.|desi\\\\.|xn--mgbt3dhd\\\\.|wed\\\\.|nowruz\\\\.|tci\\\\.|shia\\\\.|rio\\\\.|erni\\\\.|eurovision\\\\.|radio\\\\.|cern\\\\.|xn--30rr7y\\\\.|extraspace\\\\.|fage\\\\.|fairwinds\\\\.|farmers\\\\.|jeep\\\\.|fedex\\\\.|crs\\\\.|forum\\\\.|observer\\\\.|ferrero\\\\.|ferrari\\\\.|fidelity\\\\.|firmdale\\\\.|flickr\\\\.|flir\\\\.|agakhan\\\\.|imamat\\\\.|akdn\\\\.|ismaili\\\\.|ford\\\\.|lincoln\\\\.|xn--80adxhks\\\\.|moscow\\\\.|fox\\\\.|fresenius\\\\.|frl\\\\.|frontier\\\\.|ftr\\\\.|insurance\\\\.|bank\\\\.|fujitsu\\\\.|basketball\\\\.|gallo\\\\.|barefoot\\\\.|gallup\\\\.|gea\\\\.|amsterdam\\\\.|sport\\\\.|accountant\\\\.|science\\\\.|bid\\\\.|stream\\\\.|men\\\\.|date\\\\.|racing\\\\.|party\\\\.|download\\\\.|cricket\\\\.|faith\\\\.|review\\\\.|trade\\\\.|loan\\\\.|webcam\\\\.|win\\\\.|xn--5tzm5g\\\\.|globo\\\\.|nagoya\\\\.|shop\\\\.|yokohama\\\\.|gmo\\\\.|tokyo\\\\.|ggee\\\\.|grainger\\\\.|xn--efvy88h\\\\.|xn--1qqw23a\\\\.|xn--xhq521b\\\\.|gucci\\\\.|lundbeck\\\\.|hamburg\\\\.|hbo\\\\.|hdfcbank\\\\.|xn--4gbrim\\\\.|hermes\\\\.|hisamitsu\\\\.|hitachi\\\\.|thd\\\\.|homedepot\\\\.|honda\\\\.|cipriani\\\\.|hdfc\\\\.|hsbc\\\\.|dvr\\\\.|hughes\\\\.|sling\\\\.|hyatt\\\\.|hyundai\\\\.|theater\\\\.|exposed\\\\.|taxi\\\\.|coffee\\\\.|express\\\\.|support\\\\.|vision\\\\.|tires\\\\.|fish\\\\.|group\\\\.|red\\\\.|gallery\\\\.|repair\\\\.|money\\\\.|vin\\\\.|gratis\\\\.|furniture\\\\.|center\\\\.|bingo\\\\.|international\\\\.|energy\\\\.|digital\\\\.|properties\\\\.|shiksha\\\\.|cleaning\\\\.|fitness\\\\.|bio\\\\.|software\\\\.|delivery\\\\.|land\\\\.|university\\\\.|actor\\\\.|dentist\\\\.|photos\\\\.|discount\\\\.|green\\\\.|town\\\\.|florist\\\\.|xn--czrs0t\\\\.|degree\\\\.|bet\\\\.|community\\\\.|restaurant\\\\.|equipment\\\\.|watches\\\\.|tips\\\\.|coupons\\\\.|games\\\\.|graphics\\\\.|cheap\\\\.|guru\\\\.|associates\\\\.|haus\\\\.|clinic\\\\.|enterprises\\\\.|boutique\\\\.|finance\\\\.|dog\\\\.|deals\\\\.|archi\\\\.|partners\\\\.|directory\\\\.|rocks\\\\.|maison\\\\.|legal\\\\.|blue\\\\.|run\\\\.|engineer\\\\.|kaufen\\\\.|holiday\\\\.|video\\\\.|chat\\\\.|parts\\\\.|forex\\\\.|builders\\\\.|recipes\\\\.|zone\\\\.|pictures\\\\.|photography\\\\.|capital\\\\.|dating\\\\.|management\\\\.|forsale\\\\.|voto\\\\.|school\\\\.|market\\\\.|kim\\\\.|farm\\\\.|rip\\\\.|limo\\\\.|kitchen\\\\.|watch\\\\.|insure\\\\.|expert\\\\.|direct\\\\.|fan\\\\.|show\\\\.|supplies\\\\.|ninja\\\\.|industries\\\\.|email\\\\.|agency\\\\.|style\\\\.|doctor\\\\.|team\\\\.|auction\\\\.|attorney\\\\.|contractors\\\\.|creditcard\\\\.|house\\\\.|engineering\\\\.|tienda\\\\.|diamonds\\\\.|services\\\\.|tax\\\\.|city\\\\.|solar\\\\.|democrat\\\\.|army\\\\.|poker\\\\.|rentals\\\\.|care\\\\.|bike\\\\.|tools\\\\.|dental\\\\.|futbol\\\\.|promo\\\\.|glass\\\\.|fyi\\\\.|immo\\\\.|soccer\\\\.|solutions\\\\.|family\\\\.|band\\\\.|xn--vhquv\\\\.|tours\\\\.|hockey\\\\.|works\\\\.|reviews\\\\.|jetzt\\\\.|training\\\\.|wtf\\\\.|reise\\\\.|vet\\\\.|dance\\\\.|jewelry\\\\.|viajes\\\\.|mba\\\\.|wine\\\\.|sale\\\\.|immobilien\\\\.|church\\\\.|company\\\\.|salon\\\\.|ventures\\\\.|black\\\\.|memorial\\\\.|cards\\\\.|apartments\\\\.|shopping\\\\.|football\\\\.|clothing\\\\.|shoes\\\\.|institute\\\\.|education\\\\.|life\\\\.|world\\\\.|tennis\\\\.|gifts\\\\.|vacations\\\\.|claims\\\\.|exchange\\\\.|marketing\\\\.|plumbing\\\\.|business\\\\.|rehab\\\\.|airforce\\\\.|technology\\\\.|systems\\\\.|singles\\\\.|bargains\\\\.|productions\\\\.|codes\\\\.|vote\\\\.|voyage\\\\.|catering\\\\.|broker\\\\.|supply\\\\.|pet\\\\.|events\\\\.|surgery\\\\.|cafe\\\\.|lgbt\\\\.|network\\\\.|gmbh\\\\.|report\\\\.|credit\\\\.|place\\\\.|ski\\\\.|news\\\\.|cash\\\\.|coach\\\\.|irish\\\\.|golf\\\\.|computer\\\\.|camera\\\\.|organic\\\\.|gold\\\\.|llc\\\\.|schule\\\\.|cab\\\\.|lotto\\\\.|republican\\\\.|investments\\\\.|guide\\\\.|camp\\\\.|gripe\\\\.|live\\\\.|studio\\\\.|lease\\\\.|construction\\\\.|domains\\\\.|condos\\\\.|ltd\\\\.|social\\\\.|healthcare\\\\.|xn--fjq720a\\\\.|lighting\\\\.|xn--6frz82g\\\\.|plus\\\\.|pub\\\\.|movie\\\\.|consulting\\\\.|pizza\\\\.|mortgage\\\\.|holdings\\\\.|academy\\\\.|today\\\\.|financial\\\\.|estate\\\\.|fail\\\\.|pink\\\\.|villas\\\\.|careers\\\\.|media\\\\.|lawyer\\\\.|xn--unup4y\\\\.|contact\\\\.|moda\\\\.|markets\\\\.|navy\\\\.|loans\\\\.|flights\\\\.|accountants\\\\.|toys\\\\.|limited\\\\.|cool\\\\.|fund\\\\.|hospital\\\\.|sarl\\\\.|trading\\\\.|cruises\\\\.|reisen\\\\.|casino\\\\.|ieee\\\\.|ifm\\\\.|ikano\\\\.|zara\\\\.|icbc\\\\.|ooo\\\\.|llp\\\\.|inc\\\\.|dealer\\\\.|box\\\\.|ice\\\\.|moe\\\\.|earth\\\\.|weather\\\\.|weatherchannel\\\\.|ibm\\\\.|xn--ngbc5azd\\\\.|xn--czr694b\\\\.|xn--imr513n\\\\.|property\\\\.|living\\\\.|lifestyle\\\\.|trust\\\\.|realty\\\\.|vana\\\\.|diy\\\\.|click\\\\.|hiv\\\\.|country\\\\.|food\\\\.|sexy\\\\.|ltda\\\\.|srl\\\\.|mint\\\\.|intuit\\\\.|ipiranga\\\\.|onl\\\\.|rich\\\\.|lds\\\\.|mormon\\\\.|istanbul\\\\.|ist\\\\.|itau\\\\.|itv\\\\.|jaguar\\\\.|landrover\\\\.|nhk\\\\.|jprs\\\\.|jcb\\\\.|top\\\\.|jnj\\\\.|gdn\\\\.|lasalle\\\\.|jll\\\\.|jpmorgan\\\\.|chase\\\\.|juniper\\\\.|zuerich\\\\.|kddi\\\\.|xn--w4r85el8fhu5dnra\\\\.|xn--w4rs40l\\\\.|kuokgroup\\\\.|kerryhotels\\\\.|kerryproperties\\\\.|kia\\\\.|xn--ses554g\\\\.|blog\\\\.|komatsu\\\\.|kpn\\\\.|xn--kcrx77d1x4a\\\\.|philips\\\\.|kosher\\\\.|kpmg\\\\.|kred\\\\.|krd\\\\.|kfh\\\\.|xn--ngbe9e0a\\\\.|latrobe\\\\.|lanxess\\\\.|tube\\\\.|xn--ngbrx\\\\.|arab\\\\.|lefrak\\\\.|lego\\\\.|tatar\\\\.|locus\\\\.|lotte\\\\.|lplfinancial\\\\.|lpl\\\\.|luxury\\\\.|man\\\\.|marriott\\\\.|mit\\\\.|jmp\\\\.|mattel\\\\.|mckinsey\\\\.|med\\\\.|love\\\\.|emerck\\\\.|microsoft\\\\.|azure\\\\.|office\\\\.|skype\\\\.|hotmail\\\\.|xbox\\\\.|bing\\\\.|windows\\\\.|bayern\\\\.|london\\\\.|adult\\\\.|porn\\\\.|nrw\\\\.|sex\\\\.|mitsubishi\\\\.|mlb\\\\.|baseball\\\\.|mma\\\\.|monash\\\\.|film\\\\.|moto\\\\.|msd\\\\.|merckmsd\\\\.|mtn\\\\.|mtr\\\\.|barcelona\\\\.|bcn\\\\.|maif\\\\.|pharmacy\\\\.|reit\\\\.|ubank\\\\.|nab\\\\.|xn--g2xx48c\\\\.|nba\\\\.|nec\\\\.|xn--mxtq1m\\\\.|netflix\\\\.|neustar\\\\.|next\\\\.|nextdirect\\\\.|nfl\\\\.|nike\\\\.|nikon\\\\.|nissay\\\\.|ntt\\\\.|datsun\\\\.|infiniti\\\\.|nissan\\\\.|nokia\\\\.|wales\\\\.|cymru\\\\.|link\\\\.|nra\\\\.|goo\\\\.|final\\\\.|bom\\\\.|aol\\\\.|obi\\\\.|one\\\\.|frogans\\\\.|oracle\\\\.|java\\\\.|orange\\\\.|locker\\\\.|osaka\\\\.|otsuka\\\\.|ovh\\\\.|richardli\\\\.|panasonic\\\\.|pccw\\\\.|xn--fzys8d69uvgm\\\\.|hkt\\\\.|pfizer\\\\.|physio\\\\.|pictet\\\\.|ping\\\\.|pioneer\\\\.|build\\\\.|pnc\\\\.|quebec\\\\.|politie\\\\.|xn--tiq49xqyj\\\\.|xn--mgbi4ecexp\\\\.|xn--80aqecdr1a\\\\.|catholic\\\\.|praxi\\\\.|pwc\\\\.|progressive\\\\.|prudential\\\\.|pru\\\\.|xn--i1b6b1a6a2e\\\\.|charity\\\\.|ngo\\\\.|giving\\\\.|ong\\\\.|xn--nqv7f\\\\.|foundation\\\\.|xn--nqv7fs00ema\\\\.|xn--c1avg\\\\.|gives\\\\.|tirol\\\\.|wien\\\\.|bar\\\\.|rest\\\\.|mango\\\\.|eus\\\\.|calvinklein\\\\.|shouji\\\\.|xihuan\\\\.|yun\\\\.|anquan\\\\.|realtor\\\\.|redstone\\\\.|alsace\\\\.|courses\\\\.|compare\\\\.|boston\\\\.|surf\\\\.|beer\\\\.|tattoo\\\\.|fit\\\\.|miami\\\\.|rodeo\\\\.|health\\\\.|wedding\\\\.|vip\\\\.|design\\\\.|abogado\\\\.|luxe\\\\.|yoga\\\\.|select\\\\.|garden\\\\.|cooking\\\\.|study\\\\.|work\\\\.|blackfriday\\\\.|fashion\\\\.|casa\\\\.|fishing\\\\.|vodka\\\\.|law\\\\.|club\\\\.|photo\\\\.|horse\\\\.|dds\\\\.|reliance\\\\.|ril\\\\.|gop\\\\.|sas\\\\.|genting\\\\.|ricoh\\\\.|xn--9et52u\\\\.|bosch\\\\.|rexroth\\\\.|rogers\\\\.|fido\\\\.|xn--p1acf\\\\.|rwe\\\\.|safety\\\\.|weber\\\\.|sakura\\\\.|samsung\\\\.|xn--cg4bki\\\\.|sandvik\\\\.|sandvikcoromant\\\\.|walter\\\\.|sanofi\\\\.|sap\\\\.|viva\\\\.|stcgroup\\\\.|stc\\\\.|saxo\\\\.|schaeffler\\\\.|cuisinella\\\\.|schmidt\\\\.|scholarships\\\\.|schwarz\\\\.|lidl\\\\.|seat\\\\.|seek\\\\.|epson\\\\.|sener\\\\.|seven\\\\.|sew\\\\.|shangrila\\\\.|xn--5su34j936bgsg\\\\.|sharp\\\\.|shell\\\\.|cfd\\\\.|sbs\\\\.|bond\\\\.|icu\\\\.|cyou\\\\.|xn--9krt00a\\\\.|weibo\\\\.|sina\\\\.|sky\\\\.|smart\\\\.|sncf\\\\.|sfr\\\\.|softbank\\\\.|sohu\\\\.|playstation\\\\.|sony\\\\.|xn--nyqy26a\\\\.|xn--rhqv96g\\\\.|stada\\\\.|staples\\\\.|star\\\\.|nowtv\\\\.|sbi\\\\.|statebank\\\\.|statefarm\\\\.|sydney\\\\.|stockholm\\\\.|suzuki\\\\.|swiss\\\\.|norton\\\\.|tab\\\\.|taipei\\\\.|target\\\\.|tatamotors\\\\.|tdk\\\\.|tiaa\\\\.|ericsson\\\\.|vivo\\\\.|xn--b4w605ferd\\\\.|temasek\\\\.|teva\\\\.|bcg\\\\.|mls\\\\.|cbn\\\\.|nyc\\\\.|melbourne\\\\.|lamer\\\\.|clinique\\\\.|origins\\\\.|xn--d1acj3b\\\\.|athleta\\\\.|gap\\\\.|goodyear\\\\.|dunlop\\\\.|scb\\\\.|swatch\\\\.|omega\\\\.|tjmaxx\\\\.|marshalls\\\\.|tjx\\\\.|homesense\\\\.|homegoods\\\\.|winners\\\\.|tkmaxx\\\\.|vanguard\\\\.|xn--fiq228c5hs\\\\.|xn--3ds443g\\\\.|versicherung\\\\.|wiki\\\\.|gay\\\\.|ink\\\\.|pid\\\\.|feedback\\\\.|toray\\\\.|toshiba\\\\.|total\\\\.|lexus\\\\.|toyota\\\\.|redumbrella\\\\.|travelersinsurance\\\\.|travelers\\\\.|trv\\\\.|tui\\\\.|tvs\\\\.|xn--6qq986b3xl\\\\.|uol\\\\.|ubs\\\\.|art\\\\.|juegos\\\\.|help\\\\.|ups\\\\.|voting\\\\.|xn--c2br7g\\\\.|xn--mk1bu44c\\\\.|xn--t60b56a\\\\.|xn--tckwe\\\\.|xn--fhbei\\\\.|xn--j1aef\\\\.|xn--9dbq2a\\\\.|xn--pssy2u\\\\.|xn--3pxu8k\\\\.|xn--11b4c3d\\\\.|xn--42c2d9a\\\\.|comsec\\\\.|verisign\\\\.|vig\\\\.|cruise\\\\.|viking\\\\.|virgin\\\\.|visa\\\\.|volvo\\\\.|sucks\\\\.|grocery\\\\.|asda\\\\.|walmart\\\\.|george\\\\.|samsclub\\\\.|menu\\\\.|weir\\\\.|bauhaus\\\\.|whoswho\\\\.|williamhill\\\\.|wme\\\\.|wolterskluwer\\\\.|woodside\\\\.|rugby\\\\.|wtc\\\\.|xerox\\\\.|diet\\\\.|ceo\\\\.|hosting\\\\.|college\\\\.|game\\\\.|baby\\\\.|theatre\\\\.|protection\\\\.|beauty\\\\.|motorcycles\\\\.|auto\\\\.|cars\\\\.|christmas\\\\.|rent\\\\.|security\\\\.|boats\\\\.|quest\\\\.|storage\\\\.|mom\\\\.|audio\\\\.|tickets\\\\.|xyz\\\\.|flowers\\\\.|homes\\\\.|makeup\\\\.|hair\\\\.|skin\\\\.|monster\\\\.|lol\\\\.|yachts\\\\.|guitars\\\\.|autos\\\\.|lat\\\\.|car\\\\.|pics\\\\.|yahoo\\\\.|yandex\\\\.|goldpoint\\\\.|yodobashi\\\\.|africa\\\\.|joburg\\\\.|durban\\\\.|capetown\\\\.|ren\\\\.|fans\\\\.|xn--czru2d\\\\.|xn--hxt814e\\\\.|wang\\\\.|xn--45q11c\\\\.|store\\\\.|fun\\\\.|uno\\\\.|space\\\\.|online\\\\.|site\\\\.|tech\\\\.|host\\\\.|website\\\\.|press\\\\.|dreyer\\\\.|active\\\\.|hanjiro\\\\.|mtpc\\\\.|xperia\\\\.|everbank\\\\.|contactEmail\\\\.|statoil\\\\.|boots\\\\.|edu\\\\.|flsmidth\\\\.|spiegel\\\\.|mallorca\\\\.|panerai\\\\.|orientexpress\\\\.|duns\\\\.|movistar\\\\.|goodhands\\\\.|starhub\\\\.|honeywell\\\\.|chloe\\\\.|bnl\\\\.|ladbrokes\\\\.|doha\\\\.|jlc\\\\.|zippo\\\\.|pamperedchef\\\\.|mopar\\\\.|montblanc\\\\.|mutuelle\\\\.|piaget\\\\.|chrysler\\\\.|mcd\\\\.|telecity\\\\.|vista\\\\.|srt\\\\.|mcdonalds\\\\.|meo\\\\.|dodge\\\\.|iinet\\\\.|lancome\\\\.|uconnect\\\\.|xn--mgbb9fbpob\\\\.|telefonica\\\\.|sapo\\\\.|epost\\\\.|cartier\\\\.|mobily\\\\.|cookingchannel\\\\.|iselect\\\\.|linde\\\\.|intel\\\\.|lixil\\\\.|afamilycompany\\\\.|shriram\\\\.|kerrylogistics\\\\.|coop\\\\.|guardian\\\\.|raid\\\\.|dabur\\\\.|museum\\\\.|northwesternmutual\\\\.|glade\\\\.|kinder\\\\.|bugatti\\\\.|vistaprint\\\\.|tiffany\\\\.|esurance\\\\.|natura\\\\.|rmit\\\\.|jobs\\\\.|mutual\\\\.|liaison\\\\.|blanco\\\\.|ses\\\\.|lancaster\\\\.|xxx\\\\.|travel\\\\.|cat\\\\.|hoteles\\\\.|duck\\\\.|pro\\\\.|frontdoor\\\\.|adac\\\\.|lipsy\\\\.|abarth\\\\.|bentley\\\\.|scor\\\\.|sca\\\\.|warman\\\\.|iwc\\\\.|lupin\\\\.|cbs\\\\.|csc\\\\.|nadex\\\\.|avianca\\\\.|aigo\\\\.|loft\\\\.|cancerresearch\\\\.|showtime\\\\.|ceb\\\\.|comcast\\\\.|caseih\\\\.|iveco\\\\.|pramerica\\\\.|xfinity\\\\.|newholland\\\\.|alfaromeo\\\\.|macys\\\\.|etisalat\\\\.|fiat\\\\.|xn--estv75g\\\\.|rocher\\\\.|lancia\\\\.|maserati\\\\.|xn--mgbaakc7dvf\\\\.|nationwide\\\\.|travelchannel\\\\.|foodnetwork\\\\.|off\\\\.|rightathome\\\\.|budapest\\\\.|jcp\\\\.|metlife\\\\.|swiftcover\\\\.|onyourside\\\\.|hgtv\\\\.|scjohnson\\\\.|cityeats\\\\.|symantec\\\\.|xn--pbt977c\\\\.|qvc\\\\.|xn--kpu716f\\\\.|bananarepublic\\\\.|spreadbetting\\\\.|oldnavy\\\\.|xn--jlq61u9w7b\\\\.|passagens\\\\.|xn--3oq18vl8pn36a\\\\.|vuelos\\\\.|volkswagen\\\\.|fujixerox\\\\.|post\\\\.|pw\\\\.|in.net\\\\.')",
       "primary_user": "prod-prj-etl@radixbi-249015.iam.gserviceaccount.com",
       "primary_team": "Unknown",
-      "total_cost": 48.7878,
-      "avg_cost": 0.8712,
-      "max_cost": 0.8855,
-      "execution_count": 56,
-      "total_bytes_gb": 9991.76,
-      "first_seen": "2025-12-14",
-      "last_seen": "2026-03-12",
+      "total_cost": 49.7457,
+      "avg_cost": 0.8727,
+      "max_cost": 0.8868,
+      "execution_count": 57,
+      "total_bytes_gb": 10187.93,
+      "first_seen": "2025-12-16",
+      "last_seen": "2026-03-15",
       "waste_tag": "repeated_culprit",
       "dest_dataset": "whoisdb",
       "optimization": {
         "patterns": [
           "update_dml",
-          "select_star",
           "medium_scan_per_run",
-          "dedup_pattern",
+          "string_function",
           "large_source_table"
         ],
         "headline": "Add partition filter and explicit column list to reduce bytes scanned",
         "bullets": [
-          "Query scans 178 GB on average per execution. The two fastest wins are partition pruning and column pruning.",
+          "Query scans 179 GB on average per execution. The two fastest wins are partition pruning and column pruning.",
           "Check whether the source table has a DATE or TIMESTAMP partition column. If not, request the table owner to add one \u2014 this is the single highest-impact change.",
           "Replace any SELECT * with only the columns needed by downstream consumers.",
           "Add a WHERE clause on the partition column aligned to only the date range the query actually needs.",
@@ -1942,7 +1941,7 @@ D = {
           "Use INFORMATION_SCHEMA.TABLE_STORAGE to confirm current bytes and verify reduction after changes."
         ],
         "sql_example": "-- Check if table is partitioned\nSELECT table_name, partition_expiration_days, clustering_fields\nFROM `region-us`.INFORMATION_SCHEMA.TABLES\nWHERE table_schema = 'your_dataset' AND table_name = 'your_table';\n\n-- After adding partition: filter to needed range only\nSELECT col1, col2, col3   -- replace SELECT *\nFROM your_dataset.your_table\nWHERE DATE(partition_col) >= DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY);",
-        "estimated_savings": 10.73,
+        "estimated_savings": 10.94,
         "savings_pct": 22.0,
         "priority": "Medium",
         "effort": "Medium"
@@ -1953,7 +1952,7 @@ D = {
     "prod-prj-etl@radixbi-249015.iam.gserviceaccount.com": [
       {
         "month": "2025-12",
-        "cost": 150.874
+        "cost": 125.5981
       },
       {
         "month": "2026-01",
@@ -1965,13 +1964,13 @@ D = {
       },
       {
         "month": "2026-03",
-        "cost": 126.4728
+        "cost": 156.726
       }
     ],
     "bi-team@radix.email": [
       {
         "month": "2025-12",
-        "cost": 129.8528
+        "cost": 110.3408
       },
       {
         "month": "2026-01",
@@ -1983,13 +1982,49 @@ D = {
       },
       {
         "month": "2026-03",
-        "cost": 80.3595
+        "cost": 100.4054
+      }
+    ],
+    "prod-prj-premium@radixbi-249015.iam.gserviceaccount.com": [
+      {
+        "month": "2025-12",
+        "cost": 34.8144
+      },
+      {
+        "month": "2026-01",
+        "cost": 716.2683
+      },
+      {
+        "month": "2026-02",
+        "cost": 66.2707
+      },
+      {
+        "month": "2026-03",
+        "cost": 37.3732
+      }
+    ],
+    "newreg-npv-sa@radixbi-249015.iam.gserviceaccount.com": [
+      {
+        "month": "2025-12",
+        "cost": 645.8379
+      },
+      {
+        "month": "2026-01",
+        "cost": 167.7966
+      },
+      {
+        "month": "2026-02",
+        "cost": 180.828
+      },
+      {
+        "month": "2026-03",
+        "cost": 33.805
       }
     ],
     "gd-optimizer-sa@radixbi-249015.iam.gserviceaccount.com": [
       {
         "month": "2025-12",
-        "cost": 123.8425
+        "cost": 104.4123
       },
       {
         "month": "2026-01",
@@ -2004,46 +2039,10 @@ D = {
         "cost": 31.7631
       }
     ],
-    "prod-prj-premium@radixbi-249015.iam.gserviceaccount.com": [
-      {
-        "month": "2025-12",
-        "cost": 40.4067
-      },
-      {
-        "month": "2026-01",
-        "cost": 716.2683
-      },
-      {
-        "month": "2026-02",
-        "cost": 66.2707
-      },
-      {
-        "month": "2026-03",
-        "cost": 29.925
-      }
-    ],
-    "newreg-npv-sa@radixbi-249015.iam.gserviceaccount.com": [
-      {
-        "month": "2025-12",
-        "cost": 682.335
-      },
-      {
-        "month": "2026-01",
-        "cost": 167.7966
-      },
-      {
-        "month": "2026-02",
-        "cost": 180.828
-      },
-      {
-        "month": "2026-03",
-        "cost": 20.5608
-      }
-    ],
     "shivanshu@radix.email": [
       {
         "month": "2025-12",
-        "cost": 44.0311
+        "cost": 37.4481
       },
       {
         "month": "2026-01",
@@ -2055,13 +2054,13 @@ D = {
       },
       {
         "month": "2026-03",
-        "cost": 17.0115
+        "cost": 20.7464
       }
     ],
     "655967812175-compute@developer.gserviceaccount.com": [
       {
         "month": "2025-12",
-        "cost": 6.1553
+        "cost": 5.2148
       },
       {
         "month": "2026-01",
@@ -2073,13 +2072,13 @@ D = {
       },
       {
         "month": "2026-03",
-        "cost": 14.8136
+        "cost": 18.6981
       }
     ],
     "tableau-service-creds-shiv@radixbi-249015.iam.gserviceaccount.com": [
       {
         "month": "2025-12",
-        "cost": 25.6496
+        "cost": 20.7529
       },
       {
         "month": "2026-01",
@@ -2091,13 +2090,13 @@ D = {
       },
       {
         "month": "2026-03",
-        "cost": 14.327
+        "cost": 17.7445
       }
     ],
     "bi-data-integrity@radixbi-249015.iam.gserviceaccount.com": [
       {
         "month": "2025-12",
-        "cost": 18.081
+        "cost": 15.2372
       },
       {
         "month": "2026-01",
@@ -2109,13 +2108,13 @@ D = {
       },
       {
         "month": "2026-03",
-        "cost": 12.1389
+        "cost": 15.1764
       }
     ],
     "shradhanand@radix.email": [
       {
         "month": "2025-12",
-        "cost": 13.1798
+        "cost": 11.1031
       },
       {
         "month": "2026-01",
@@ -2127,7 +2126,7 @@ D = {
       },
       {
         "month": "2026-03",
-        "cost": 10.2965
+        "cost": 12.8386
       }
     ]
   },
@@ -2139,11 +2138,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 682.335,
-      "query_count": 8163,
-      "cost_per_query": 0.0836,
+      "total_cost": 645.8379,
+      "query_count": 7097,
+      "cost_per_query": 0.091,
       "costly_queries": 0,
-      "total_bytes_gb": 223922.2
+      "total_bytes_gb": 209120.7
     },
     {
       "month": "2025-12",
@@ -2152,11 +2151,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 150.874,
-      "query_count": 22267,
-      "cost_per_query": 0.0068,
-      "costly_queries": 19,
-      "total_bytes_gb": 31092.41
+      "total_cost": 125.5981,
+      "query_count": 18890,
+      "cost_per_query": 0.0066,
+      "costly_queries": 16,
+      "total_bytes_gb": 25885.44
     },
     {
       "month": "2025-12",
@@ -2165,11 +2164,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "human",
-      "total_cost": 129.8528,
-      "query_count": 49951,
+      "total_cost": 110.3408,
+      "query_count": 42056,
       "cost_per_query": 0.0026,
       "costly_queries": 0,
-      "total_bytes_gb": 26936.81
+      "total_bytes_gb": 22870.1
     },
     {
       "month": "2025-12",
@@ -2178,11 +2177,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 123.8425,
-      "query_count": 17750,
+      "total_cost": 104.4123,
+      "query_count": 14942,
       "cost_per_query": 0.007,
       "costly_queries": 0,
-      "total_bytes_gb": 25328.76
+      "total_bytes_gb": 21357.47
     },
     {
       "month": "2025-12",
@@ -2191,11 +2190,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "human",
-      "total_cost": 44.0311,
-      "query_count": 9879,
+      "total_cost": 37.4481,
+      "query_count": 8304,
       "cost_per_query": 0.0045,
       "costly_queries": 0,
-      "total_bytes_gb": 16761.58
+      "total_bytes_gb": 14203.51
     },
     {
       "month": "2025-12",
@@ -2204,24 +2203,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 40.4067,
-      "query_count": 125073,
+      "total_cost": 34.8144,
+      "query_count": 104822,
       "cost_per_query": 0.0003,
       "costly_queries": 0,
-      "total_bytes_gb": 8041.29
-    },
-    {
-      "month": "2025-12",
-      "email": "radixbi@radixbi-249015.iam.gserviceaccount.com",
-      "display_name": "radixbi@radixbi-249015.iam.gserviceaccount.com",
-      "team": "Unknown",
-      "function": "Unknown",
-      "identity_type": "service_account",
-      "total_cost": 30.9452,
-      "query_count": 1165611,
-      "cost_per_query": 0.0,
-      "costly_queries": 0,
-      "total_bytes_gb": 12175.87
+      "total_bytes_gb": 6940.02
     },
     {
       "month": "2025-12",
@@ -2230,11 +2216,24 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 29.9154,
-      "query_count": 64415,
+      "total_cost": 26.8168,
+      "query_count": 54547,
       "cost_per_query": 0.0005,
       "costly_queries": 0,
-      "total_bytes_gb": 6213.96
+      "total_bytes_gb": 5565.35
+    },
+    {
+      "month": "2025-12",
+      "email": "radixbi@radixbi-249015.iam.gserviceaccount.com",
+      "display_name": "radixbi@radixbi-249015.iam.gserviceaccount.com",
+      "team": "Unknown",
+      "function": "Unknown",
+      "identity_type": "service_account",
+      "total_cost": 26.0794,
+      "query_count": 980631,
+      "cost_per_query": 0.0,
+      "costly_queries": 0,
+      "total_bytes_gb": 10261.86
     },
     {
       "month": "2025-12",
@@ -2243,11 +2242,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 25.6496,
-      "query_count": 312,
-      "cost_per_query": 0.0822,
+      "total_cost": 20.7529,
+      "query_count": 228,
+      "cost_per_query": 0.091,
       "costly_queries": 0,
-      "total_bytes_gb": 5252.98
+      "total_bytes_gb": 4250.22
     },
     {
       "month": "2025-12",
@@ -2256,11 +2255,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 24.5359,
-      "query_count": 764,
-      "cost_per_query": 0.0321,
+      "total_cost": 20.7238,
+      "query_count": 647,
+      "cost_per_query": 0.032,
       "costly_queries": 0,
-      "total_bytes_gb": 5023.72
+      "total_bytes_gb": 4243.23
     },
     {
       "month": "2025-12",
@@ -2269,11 +2268,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 19.8619,
-      "query_count": 959,
-      "cost_per_query": 0.0207,
+      "total_cost": 16.6757,
+      "query_count": 875,
+      "cost_per_query": 0.0191,
       "costly_queries": 0,
-      "total_bytes_gb": 4067.81
+      "total_bytes_gb": 3415.34
     },
     {
       "month": "2025-12",
@@ -2282,11 +2281,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 18.7573,
-      "query_count": 750,
-      "cost_per_query": 0.025,
+      "total_cost": 15.8966,
+      "query_count": 632,
+      "cost_per_query": 0.0252,
       "costly_queries": 0,
-      "total_bytes_gb": 3842.06
+      "total_bytes_gb": 3255.8
     },
     {
       "month": "2025-12",
@@ -2295,11 +2294,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 18.081,
-      "query_count": 4478,
+      "total_cost": 15.2372,
+      "query_count": 3770,
       "cost_per_query": 0.004,
       "costly_queries": 0,
-      "total_bytes_gb": 3703.03
+      "total_bytes_gb": 3120.48
     },
     {
       "month": "2025-12",
@@ -2308,11 +2307,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 17.1109,
-      "query_count": 499,
-      "cost_per_query": 0.0343,
+      "total_cost": 14.4314,
+      "query_count": 420,
+      "cost_per_query": 0.0344,
       "costly_queries": 0,
-      "total_bytes_gb": 3505.16
+      "total_bytes_gb": 2956.36
     },
     {
       "month": "2025-12",
@@ -2321,11 +2320,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "human",
-      "total_cost": 13.1798,
-      "query_count": 1766,
+      "total_cost": 11.1031,
+      "query_count": 1476,
       "cost_per_query": 0.0075,
       "costly_queries": 0,
-      "total_bytes_gb": 2699.61
+      "total_bytes_gb": 2274.84
     },
     {
       "month": "2025-12",
@@ -2334,11 +2333,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "human",
-      "total_cost": 6.9467,
-      "query_count": 794,
+      "total_cost": 5.8571,
+      "query_count": 670,
       "cost_per_query": 0.0087,
       "costly_queries": 0,
-      "total_bytes_gb": 1422.87
+      "total_bytes_gb": 1199.97
     },
     {
       "month": "2025-12",
@@ -2347,11 +2346,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 6.1553,
-      "query_count": 11856,
+      "total_cost": 5.2148,
+      "query_count": 9984,
       "cost_per_query": 0.0005,
       "costly_queries": 0,
-      "total_bytes_gb": 1271.62
+      "total_bytes_gb": 1078.42
     },
     {
       "month": "2025-12",
@@ -2360,11 +2359,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 4.8721,
-      "query_count": 5484,
+      "total_cost": 4.5697,
+      "query_count": 5034,
       "cost_per_query": 0.0009,
       "costly_queries": 0,
-      "total_bytes_gb": 997.08
+      "total_bytes_gb": 935.34
     },
     {
       "month": "2025-12",
@@ -2373,37 +2372,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 3.0773,
-      "query_count": 370,
-      "cost_per_query": 0.0083,
+      "total_cost": 2.5962,
+      "query_count": 307,
+      "cost_per_query": 0.0085,
       "costly_queries": 0,
-      "total_bytes_gb": 635.29
-    },
-    {
-      "month": "2025-12",
-      "email": "radixbi-etl@radixbi-249015.iam.gserviceaccount.com",
-      "display_name": "radixbi-etl@radixbi-249015.iam.gserviceaccount.com",
-      "team": "Unknown",
-      "function": "Unknown",
-      "identity_type": "service_account",
-      "total_cost": 3.0091,
-      "query_count": 696,
-      "cost_per_query": 0.0043,
-      "costly_queries": 0,
-      "total_bytes_gb": 616.51
-    },
-    {
-      "month": "2025-12",
-      "email": "prod-tableau-abuse@radixbi-249015.iam.gserviceaccount.com",
-      "display_name": "prod-tableau-abuse@radixbi-249015.iam.gserviceaccount.com",
-      "team": "Unknown",
-      "function": "Unknown",
-      "identity_type": "service_account",
-      "total_cost": 2.998,
-      "query_count": 122,
-      "cost_per_query": 0.0246,
-      "costly_queries": 0,
-      "total_bytes_gb": 614.05
+      "total_bytes_gb": 535.88
     },
     {
       "month": "2025-12",
@@ -2412,11 +2385,24 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "human",
-      "total_cost": 2.8063,
-      "query_count": 4138,
+      "total_cost": 2.48,
+      "query_count": 3628,
       "cost_per_query": 0.0007,
       "costly_queries": 0,
-      "total_bytes_gb": 574.78
+      "total_bytes_gb": 507.95
+    },
+    {
+      "month": "2025-12",
+      "email": "prod-tableau-abuse@radixbi-249015.iam.gserviceaccount.com",
+      "display_name": "prod-tableau-abuse@radixbi-249015.iam.gserviceaccount.com",
+      "team": "Unknown",
+      "function": "Unknown",
+      "identity_type": "service_account",
+      "total_cost": 2.4568,
+      "query_count": 98,
+      "cost_per_query": 0.0251,
+      "costly_queries": 0,
+      "total_bytes_gb": 503.05
     },
     {
       "month": "2025-12",
@@ -2425,11 +2411,24 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 2.7605,
-      "query_count": 1339,
-      "cost_per_query": 0.0021,
+      "total_cost": 2.3871,
+      "query_count": 1201,
+      "cost_per_query": 0.002,
       "costly_queries": 0,
-      "total_bytes_gb": 582.68
+      "total_bytes_gb": 505.69
+    },
+    {
+      "month": "2025-12",
+      "email": "radixbi-etl@radixbi-249015.iam.gserviceaccount.com",
+      "display_name": "radixbi-etl@radixbi-249015.iam.gserviceaccount.com",
+      "team": "Unknown",
+      "function": "Unknown",
+      "identity_type": "service_account",
+      "total_cost": 2.0608,
+      "query_count": 553,
+      "cost_per_query": 0.0037,
+      "costly_queries": 0,
+      "total_bytes_gb": 422.11
     },
     {
       "month": "2025-12",
@@ -2438,11 +2437,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 2.2248,
-      "query_count": 2988,
+      "total_cost": 1.829,
+      "query_count": 2492,
       "cost_per_query": 0.0007,
       "costly_queries": 0,
-      "total_bytes_gb": 475.63
+      "total_bytes_gb": 391.28
     },
     {
       "month": "2025-12",
@@ -2451,11 +2450,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 1.3646,
-      "query_count": 41,
-      "cost_per_query": 0.0333,
+      "total_cost": 1.148,
+      "query_count": 35,
+      "cost_per_query": 0.0328,
       "costly_queries": 0,
-      "total_bytes_gb": 279.25
+      "total_bytes_gb": 234.91
     },
     {
       "month": "2025-12",
@@ -2464,24 +2463,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "human",
-      "total_cost": 1.1226,
-      "query_count": 1350,
+      "total_cost": 0.9005,
+      "query_count": 1132,
       "cost_per_query": 0.0008,
       "costly_queries": 0,
-      "total_bytes_gb": 231.54
-    },
-    {
-      "month": "2025-12",
-      "email": "anu@radix.email",
-      "display_name": "anu@radix.email",
-      "team": "Unknown",
-      "function": "Unknown",
-      "identity_type": "human",
-      "total_cost": 1.0301,
-      "query_count": 90,
-      "cost_per_query": 0.0114,
-      "costly_queries": 0,
-      "total_bytes_gb": 210.96
+      "total_bytes_gb": 185.8
     },
     {
       "month": "2025-12",
@@ -2490,11 +2476,24 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "human",
-      "total_cost": 0.8709,
-      "query_count": 620,
-      "cost_per_query": 0.0014,
+      "total_cost": 0.8357,
+      "query_count": 557,
+      "cost_per_query": 0.0015,
       "costly_queries": 0,
-      "total_bytes_gb": 179.54
+      "total_bytes_gb": 172.21
+    },
+    {
+      "month": "2025-12",
+      "email": "anu@radix.email",
+      "display_name": "anu@radix.email",
+      "team": "Unknown",
+      "function": "Unknown",
+      "identity_type": "human",
+      "total_cost": 0.7691,
+      "query_count": 64,
+      "cost_per_query": 0.012,
+      "costly_queries": 0,
+      "total_bytes_gb": 157.63
     },
     {
       "month": "2025-12",
@@ -2503,11 +2502,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "human",
-      "total_cost": 0.5272,
-      "query_count": 8136,
+      "total_cost": 0.4715,
+      "query_count": 4392,
       "cost_per_query": 0.0001,
       "costly_queries": 0,
-      "total_bytes_gb": 108.05
+      "total_bytes_gb": 96.64
     },
     {
       "month": "2025-12",
@@ -2524,29 +2523,29 @@ D = {
     },
     {
       "month": "2025-12",
-      "email": "prod-prj-fin@radixbi-249015.iam.gserviceaccount.com",
-      "display_name": "prod-prj-fin@radixbi-249015.iam.gserviceaccount.com",
-      "team": "Unknown",
-      "function": "Unknown",
-      "identity_type": "service_account",
-      "total_cost": 0.3085,
-      "query_count": 35,
-      "cost_per_query": 0.0088,
-      "costly_queries": 0,
-      "total_bytes_gb": 63.19
-    },
-    {
-      "month": "2025-12",
       "email": "harshde@radix.email",
       "display_name": "harshde@radix.email",
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "human",
-      "total_cost": 0.2172,
-      "query_count": 1230,
+      "total_cost": 0.2055,
+      "query_count": 1036,
       "cost_per_query": 0.0002,
       "costly_queries": 0,
-      "total_bytes_gb": 50.56
+      "total_bytes_gb": 47.82
+    },
+    {
+      "month": "2025-12",
+      "email": "prod-prj-fin@radixbi-249015.iam.gserviceaccount.com",
+      "display_name": "prod-prj-fin@radixbi-249015.iam.gserviceaccount.com",
+      "team": "Unknown",
+      "function": "Unknown",
+      "identity_type": "service_account",
+      "total_cost": 0.1822,
+      "query_count": 20,
+      "cost_per_query": 0.0091,
+      "costly_queries": 0,
+      "total_bytes_gb": 37.33
     },
     {
       "month": "2025-12",
@@ -2555,11 +2554,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 0.1764,
-      "query_count": 10947,
+      "total_cost": 0.1493,
+      "query_count": 9080,
       "cost_per_query": 0.0,
       "costly_queries": 0,
-      "total_bytes_gb": 35.88
+      "total_bytes_gb": 30.48
     },
     {
       "month": "2025-12",
@@ -2568,24 +2567,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 0.1521,
-      "query_count": 474,
+      "total_cost": 0.1243,
+      "query_count": 399,
       "cost_per_query": 0.0003,
       "costly_queries": 0,
-      "total_bytes_gb": 31.12
-    },
-    {
-      "month": "2025-12",
-      "email": "prod-prj-brandfort@radixbi-249015.iam.gserviceaccount.com",
-      "display_name": "prod-prj-brandfort@radixbi-249015.iam.gserviceaccount.com",
-      "team": "Unknown",
-      "function": "Unknown",
-      "identity_type": "service_account",
-      "total_cost": 0.1111,
-      "query_count": 523,
-      "cost_per_query": 0.0002,
-      "costly_queries": 0,
-      "total_bytes_gb": 24.32
+      "total_bytes_gb": 25.43
     },
     {
       "month": "2025-12",
@@ -2594,11 +2580,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "human",
-      "total_cost": 0.0955,
-      "query_count": 176,
-      "cost_per_query": 0.0005,
+      "total_cost": 0.0902,
+      "query_count": 151,
+      "cost_per_query": 0.0006,
       "costly_queries": 0,
-      "total_bytes_gb": 19.41
+      "total_bytes_gb": 18.31
     },
     {
       "month": "2025-12",
@@ -2607,11 +2593,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 0.0835,
-      "query_count": 157,
+      "total_cost": 0.0708,
+      "query_count": 145,
       "cost_per_query": 0.0005,
       "costly_queries": 0,
-      "total_bytes_gb": 16.94
+      "total_bytes_gb": 14.37
     },
     {
       "month": "2025-12",
@@ -2633,11 +2619,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 0.0231,
-      "query_count": 38,
+      "total_cost": 0.0189,
+      "query_count": 32,
       "cost_per_query": 0.0006,
       "costly_queries": 0,
-      "total_bytes_gb": 4.84
+      "total_bytes_gb": 3.96
     },
     {
       "month": "2025-12",
@@ -2646,11 +2632,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "human",
-      "total_cost": 0.0118,
-      "query_count": 38,
+      "total_cost": 0.01,
+      "query_count": 32,
       "cost_per_query": 0.0003,
       "costly_queries": 0,
-      "total_bytes_gb": 2.66
+      "total_bytes_gb": 2.24
     },
     {
       "month": "2025-12",
@@ -2659,11 +2645,24 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 0.0079,
-      "query_count": 81,
+      "total_cost": 0.0064,
+      "query_count": 66,
       "cost_per_query": 0.0001,
       "costly_queries": 0,
-      "total_bytes_gb": 1.25
+      "total_bytes_gb": 1.02
+    },
+    {
+      "month": "2025-12",
+      "email": "prod-prj-brandfort@radixbi-249015.iam.gserviceaccount.com",
+      "display_name": "prod-prj-brandfort@radixbi-249015.iam.gserviceaccount.com",
+      "team": "Unknown",
+      "function": "Unknown",
+      "identity_type": "service_account",
+      "total_cost": 0.0046,
+      "query_count": 519,
+      "cost_per_query": 0.0,
+      "costly_queries": 0,
+      "total_bytes_gb": 2.52
     },
     {
       "month": "2025-12",
@@ -2673,10 +2672,10 @@ D = {
       "function": "Unknown",
       "identity_type": "human",
       "total_cost": 0.0035,
-      "query_count": 217,
+      "query_count": 184,
       "cost_per_query": 0.0,
       "costly_queries": 0,
-      "total_bytes_gb": 1.12
+      "total_bytes_gb": 1.06
     },
     {
       "month": "2025-12",
@@ -2699,7 +2698,7 @@ D = {
       "function": "Unknown",
       "identity_type": "human",
       "total_cost": 0.0006,
-      "query_count": 65,
+      "query_count": 56,
       "cost_per_query": 0.0,
       "costly_queries": 0,
       "total_bytes_gb": 0.16
@@ -2712,7 +2711,7 @@ D = {
       "function": "Unknown",
       "identity_type": "service_account",
       "total_cost": 0.0,
-      "query_count": 76,
+      "query_count": 64,
       "cost_per_query": 0.0,
       "costly_queries": 0,
       "total_bytes_gb": 0.0
@@ -2725,10 +2724,10 @@ D = {
       "function": "Unknown",
       "identity_type": "service_account",
       "total_cost": 0.0,
-      "query_count": 76,
+      "query_count": 64,
       "cost_per_query": 0.0,
       "costly_queries": 0,
-      "total_bytes_gb": 0.19
+      "total_bytes_gb": 0.16
     },
     {
       "month": "2025-12",
@@ -2738,10 +2737,10 @@ D = {
       "function": "Unknown",
       "identity_type": "service_account",
       "total_cost": 0.0,
-      "query_count": 38,
+      "query_count": 32,
       "cost_per_query": 0.0,
       "costly_queries": 0,
-      "total_bytes_gb": 1.11
+      "total_bytes_gb": 0.95
     },
     {
       "month": "2025-12",
@@ -2764,10 +2763,10 @@ D = {
       "function": "Unknown",
       "identity_type": "service_account",
       "total_cost": 0.0,
-      "query_count": 76,
+      "query_count": 64,
       "cost_per_query": 0.0,
       "costly_queries": 0,
-      "total_bytes_gb": 0.21
+      "total_bytes_gb": 0.18
     },
     {
       "month": "2025-12",
@@ -2790,7 +2789,7 @@ D = {
       "function": "Unknown",
       "identity_type": "service_account",
       "total_cost": 0.0,
-      "query_count": 24,
+      "query_count": 21,
       "cost_per_query": 0.0,
       "costly_queries": 0,
       "total_bytes_gb": 0.0
@@ -2803,7 +2802,7 @@ D = {
       "function": "Unknown",
       "identity_type": "service_account",
       "total_cost": 0.0,
-      "query_count": 4030,
+      "query_count": 3394,
       "cost_per_query": 0.0,
       "costly_queries": 0,
       "total_bytes_gb": 0.0
@@ -4375,11 +4374,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 126.4728,
-      "query_count": 12865,
-      "cost_per_query": 0.0098,
-      "costly_queries": 13,
-      "total_bytes_gb": 26107.39
+      "total_cost": 156.726,
+      "query_count": 15858,
+      "cost_per_query": 0.0099,
+      "costly_queries": 16,
+      "total_bytes_gb": 32350.09
     },
     {
       "month": "2026-03",
@@ -4388,11 +4387,37 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "human",
-      "total_cost": 80.3595,
-      "query_count": 31907,
+      "total_cost": 100.4054,
+      "query_count": 39955,
       "cost_per_query": 0.0025,
       "costly_queries": 0,
-      "total_bytes_gb": 16694.64
+      "total_bytes_gb": 20874.36
+    },
+    {
+      "month": "2026-03",
+      "email": "prod-prj-premium@radixbi-249015.iam.gserviceaccount.com",
+      "display_name": "prod-prj-premium@radixbi-249015.iam.gserviceaccount.com",
+      "team": "Unknown",
+      "function": "Unknown",
+      "identity_type": "service_account",
+      "total_cost": 37.3732,
+      "query_count": 119484,
+      "cost_per_query": 0.0003,
+      "costly_queries": 0,
+      "total_bytes_gb": 7494.27
+    },
+    {
+      "month": "2026-03",
+      "email": "newreg-npv-sa@radixbi-249015.iam.gserviceaccount.com",
+      "display_name": "newreg-npv-sa@radixbi-249015.iam.gserviceaccount.com",
+      "team": "Unknown",
+      "function": "Unknown",
+      "identity_type": "service_account",
+      "total_cost": 33.805,
+      "query_count": 4498,
+      "cost_per_query": 0.0075,
+      "costly_queries": 0,
+      "total_bytes_gb": 13114.03
     },
     {
       "month": "2026-03",
@@ -4409,42 +4434,16 @@ D = {
     },
     {
       "month": "2026-03",
-      "email": "prod-prj-premium@radixbi-249015.iam.gserviceaccount.com",
-      "display_name": "prod-prj-premium@radixbi-249015.iam.gserviceaccount.com",
-      "team": "Unknown",
-      "function": "Unknown",
-      "identity_type": "service_account",
-      "total_cost": 29.925,
-      "query_count": 94849,
-      "cost_per_query": 0.0003,
-      "costly_queries": 0,
-      "total_bytes_gb": 5982.95
-    },
-    {
-      "month": "2026-03",
-      "email": "newreg-npv-sa@radixbi-249015.iam.gserviceaccount.com",
-      "display_name": "newreg-npv-sa@radixbi-249015.iam.gserviceaccount.com",
-      "team": "Unknown",
-      "function": "Unknown",
-      "identity_type": "service_account",
-      "total_cost": 20.5608,
-      "query_count": 3865,
-      "cost_per_query": 0.0053,
-      "costly_queries": 0,
-      "total_bytes_gb": 7784.73
-    },
-    {
-      "month": "2026-03",
       "email": "shivanshu@radix.email",
       "display_name": "shivanshu@radix.email",
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "human",
-      "total_cost": 17.0115,
-      "query_count": 3125,
-      "cost_per_query": 0.0054,
+      "total_cost": 20.7464,
+      "query_count": 3912,
+      "cost_per_query": 0.0053,
       "costly_queries": 0,
-      "total_bytes_gb": 5680.41
+      "total_bytes_gb": 6881.94
     },
     {
       "month": "2026-03",
@@ -4453,11 +4452,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 14.8136,
-      "query_count": 7754,
+      "total_cost": 18.6981,
+      "query_count": 9771,
       "cost_per_query": 0.0019,
       "costly_queries": 0,
-      "total_bytes_gb": 3035.21
+      "total_bytes_gb": 3831.9
     },
     {
       "month": "2026-03",
@@ -4466,11 +4465,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 14.327,
-      "query_count": 237,
-      "cost_per_query": 0.0605,
+      "total_cost": 17.7445,
+      "query_count": 252,
+      "cost_per_query": 0.0704,
       "costly_queries": 0,
-      "total_bytes_gb": 2934.19
+      "total_bytes_gb": 3634.12
     },
     {
       "month": "2026-03",
@@ -4479,11 +4478,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 12.1389,
-      "query_count": 2875,
+      "total_cost": 15.1764,
+      "query_count": 3603,
       "cost_per_query": 0.0042,
       "costly_queries": 0,
-      "total_bytes_gb": 2485.97
+      "total_bytes_gb": 3107.96
     },
     {
       "month": "2026-03",
@@ -4492,11 +4491,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "human",
-      "total_cost": 10.2965,
-      "query_count": 1437,
-      "cost_per_query": 0.0072,
+      "total_cost": 12.8386,
+      "query_count": 1766,
+      "cost_per_query": 0.0073,
       "costly_queries": 0,
-      "total_bytes_gb": 2110.12
+      "total_bytes_gb": 2629.98
     },
     {
       "month": "2026-03",
@@ -4505,11 +4504,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 9.6162,
-      "query_count": 728784,
+      "total_cost": 12.0526,
+      "query_count": 910809,
       "cost_per_query": 0.0,
       "costly_queries": 0,
-      "total_bytes_gb": 3312.81
+      "total_bytes_gb": 4150.79
     },
     {
       "month": "2026-03",
@@ -4518,37 +4517,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 8.3166,
-      "query_count": 465,
-      "cost_per_query": 0.0179,
+      "total_cost": 10.5061,
+      "query_count": 582,
+      "cost_per_query": 0.0181,
       "costly_queries": 0,
-      "total_bytes_gb": 1858.04
-    },
-    {
-      "month": "2026-03",
-      "email": "prod-prj-falcon@radixbi-249015.iam.gserviceaccount.com",
-      "display_name": "prod-prj-falcon@radixbi-249015.iam.gserviceaccount.com",
-      "team": "Unknown",
-      "function": "Unknown",
-      "identity_type": "service_account",
-      "total_cost": 8.0549,
-      "query_count": 4041,
-      "cost_per_query": 0.002,
-      "costly_queries": 0,
-      "total_bytes_gb": 1648.76
-    },
-    {
-      "month": "2026-03",
-      "email": "prod-tableau-etl@radixbi-249015.iam.gserviceaccount.com",
-      "display_name": "prod-tableau-etl@radixbi-249015.iam.gserviceaccount.com",
-      "team": "Unknown",
-      "function": "Unknown",
-      "identity_type": "service_account",
-      "total_cost": 6.5536,
-      "query_count": 1505,
-      "cost_per_query": 0.0044,
-      "costly_queries": 0,
-      "total_bytes_gb": 1336.67
+      "total_bytes_gb": 2345.49
     },
     {
       "month": "2026-03",
@@ -4557,63 +4530,37 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 5.7429,
-      "query_count": 21025,
-      "cost_per_query": 0.0003,
+      "total_cost": 10.4531,
+      "query_count": 25635,
+      "cost_per_query": 0.0004,
       "costly_queries": 0,
-      "total_bytes_gb": 1301.44
+      "total_bytes_gb": 2913.99
     },
     {
       "month": "2026-03",
-      "email": "devyani@radix.email",
-      "display_name": "devyani@radix.email",
-      "team": "Unknown",
-      "function": "Unknown",
-      "identity_type": "human",
-      "total_cost": 4.8152,
-      "query_count": 516,
-      "cost_per_query": 0.0093,
-      "costly_queries": 0,
-      "total_bytes_gb": 984.85
-    },
-    {
-      "month": "2026-03",
-      "email": "prod-tableau-abuse@radixbi-249015.iam.gserviceaccount.com",
-      "display_name": "prod-tableau-abuse@radixbi-249015.iam.gserviceaccount.com",
+      "email": "prod-tableau-etl@radixbi-249015.iam.gserviceaccount.com",
+      "display_name": "prod-tableau-etl@radixbi-249015.iam.gserviceaccount.com",
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 4.7344,
-      "query_count": 73,
-      "cost_per_query": 0.0649,
+      "total_cost": 8.4902,
+      "query_count": 1877,
+      "cost_per_query": 0.0045,
       "costly_queries": 0,
-      "total_bytes_gb": 969.49
+      "total_bytes_gb": 1731.8
     },
     {
       "month": "2026-03",
-      "email": "prod-tableau-premium@radixbi-249015.iam.gserviceaccount.com",
-      "display_name": "prod-tableau-premium@radixbi-249015.iam.gserviceaccount.com",
+      "email": "prod-prj-falcon@radixbi-249015.iam.gserviceaccount.com",
+      "display_name": "prod-prj-falcon@radixbi-249015.iam.gserviceaccount.com",
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 4.5871,
-      "query_count": 136,
-      "cost_per_query": 0.0337,
+      "total_cost": 8.4188,
+      "query_count": 4221,
+      "cost_per_query": 0.002,
       "costly_queries": 0,
-      "total_bytes_gb": 939.69
-    },
-    {
-      "month": "2026-03",
-      "email": "prod-tableau-ds@radixbi-249015.iam.gserviceaccount.com",
-      "display_name": "prod-tableau-ds@radixbi-249015.iam.gserviceaccount.com",
-      "team": "Unknown",
-      "function": "Unknown",
-      "identity_type": "service_account",
-      "total_cost": 4.4854,
-      "query_count": 275,
-      "cost_per_query": 0.0163,
-      "costly_queries": 0,
-      "total_bytes_gb": 917.54
+      "total_bytes_gb": 1723.07
     },
     {
       "month": "2026-03",
@@ -4622,37 +4569,63 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "human",
-      "total_cost": 3.6563,
-      "query_count": 3187,
-      "cost_per_query": 0.0011,
+      "total_cost": 7.5374,
+      "query_count": 4124,
+      "cost_per_query": 0.0018,
       "costly_queries": 0,
-      "total_bytes_gb": 748.93
+      "total_bytes_gb": 1555.67
     },
     {
       "month": "2026-03",
-      "email": "rushabh@radix.email",
-      "display_name": "rushabh@radix.email",
-      "team": "Unknown",
-      "function": "Unknown",
-      "identity_type": "human",
-      "total_cost": 3.026,
-      "query_count": 212,
-      "cost_per_query": 0.0143,
-      "costly_queries": 0,
-      "total_bytes_gb": 620.72
-    },
-    {
-      "month": "2026-03",
-      "email": "radixbi-etl@radixbi-249015.iam.gserviceaccount.com",
-      "display_name": "radixbi-etl@radixbi-249015.iam.gserviceaccount.com",
+      "email": "prod-tableau-ds@radixbi-249015.iam.gserviceaccount.com",
+      "display_name": "prod-tableau-ds@radixbi-249015.iam.gserviceaccount.com",
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 2.9973,
-      "query_count": 675,
-      "cost_per_query": 0.0044,
+      "total_cost": 7.0143,
+      "query_count": 354,
+      "cost_per_query": 0.0198,
       "costly_queries": 0,
-      "total_bytes_gb": 614.74
+      "total_bytes_gb": 1434.98
+    },
+    {
+      "month": "2026-03",
+      "email": "devyani@radix.email",
+      "display_name": "devyani@radix.email",
+      "team": "Unknown",
+      "function": "Unknown",
+      "identity_type": "human",
+      "total_cost": 5.9873,
+      "query_count": 642,
+      "cost_per_query": 0.0093,
+      "costly_queries": 0,
+      "total_bytes_gb": 1224.91
+    },
+    {
+      "month": "2026-03",
+      "email": "prod-tableau-abuse@radixbi-249015.iam.gserviceaccount.com",
+      "display_name": "prod-tableau-abuse@radixbi-249015.iam.gserviceaccount.com",
+      "team": "Unknown",
+      "function": "Unknown",
+      "identity_type": "service_account",
+      "total_cost": 5.9694,
+      "query_count": 92,
+      "cost_per_query": 0.0649,
+      "costly_queries": 0,
+      "total_bytes_gb": 1222.39
+    },
+    {
+      "month": "2026-03",
+      "email": "prod-tableau-premium@radixbi-249015.iam.gserviceaccount.com",
+      "display_name": "prod-tableau-premium@radixbi-249015.iam.gserviceaccount.com",
+      "team": "Unknown",
+      "function": "Unknown",
+      "identity_type": "service_account",
+      "total_cost": 5.7649,
+      "query_count": 169,
+      "cost_per_query": 0.0341,
+      "costly_queries": 0,
+      "total_bytes_gb": 1180.98
     },
     {
       "month": "2026-03",
@@ -4661,50 +4634,37 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 2.7394,
-      "query_count": 180,
-      "cost_per_query": 0.0152,
+      "total_cost": 4.4562,
+      "query_count": 216,
+      "cost_per_query": 0.0206,
       "costly_queries": 0,
-      "total_bytes_gb": 561.01
+      "total_bytes_gb": 912.68
     },
     {
       "month": "2026-03",
-      "email": "market-share-prediction@radixbi-249015.iam.gserviceaccount.com",
-      "display_name": "market-share-prediction@radixbi-249015.iam.gserviceaccount.com",
+      "email": "radixbi-etl@radixbi-249015.iam.gserviceaccount.com",
+      "display_name": "radixbi-etl@radixbi-249015.iam.gserviceaccount.com",
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 2.2177,
-      "query_count": 336,
-      "cost_per_query": 0.0066,
+      "total_cost": 3.9737,
+      "query_count": 821,
+      "cost_per_query": 0.0048,
       "costly_queries": 0,
-      "total_bytes_gb": 460.46
+      "total_bytes_gb": 814.79
     },
     {
       "month": "2026-03",
-      "email": "vishwanath@radix.email",
-      "display_name": "vishwanath@radix.email",
+      "email": "rushabh@radix.email",
+      "display_name": "rushabh@radix.email",
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "human",
-      "total_cost": 2.2126,
-      "query_count": 445,
-      "cost_per_query": 0.005,
+      "total_cost": 3.772,
+      "query_count": 312,
+      "cost_per_query": 0.0121,
       "costly_queries": 0,
-      "total_bytes_gb": 452.78
-    },
-    {
-      "month": "2026-03",
-      "email": "serpgodaddyads@radixbi-249015.iam.gserviceaccount.com",
-      "display_name": "serpgodaddyads@radixbi-249015.iam.gserviceaccount.com",
-      "team": "Unknown",
-      "function": "Unknown",
-      "identity_type": "service_account",
-      "total_cost": 2.1409,
-      "query_count": 7801,
-      "cost_per_query": 0.0003,
-      "costly_queries": 0,
-      "total_bytes_gb": 444.66
+      "total_bytes_gb": 773.69
     },
     {
       "month": "2026-03",
@@ -4713,11 +4673,50 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 1.9573,
-      "query_count": 878,
-      "cost_per_query": 0.0022,
+      "total_cost": 3.1319,
+      "query_count": 1569,
+      "cost_per_query": 0.002,
       "costly_queries": 0,
-      "total_bytes_gb": 438.4
+      "total_bytes_gb": 711.05
+    },
+    {
+      "month": "2026-03",
+      "email": "market-share-prediction@radixbi-249015.iam.gserviceaccount.com",
+      "display_name": "market-share-prediction@radixbi-249015.iam.gserviceaccount.com",
+      "team": "Unknown",
+      "function": "Unknown",
+      "identity_type": "service_account",
+      "total_cost": 2.7832,
+      "query_count": 420,
+      "cost_per_query": 0.0066,
+      "costly_queries": 0,
+      "total_bytes_gb": 577.99
+    },
+    {
+      "month": "2026-03",
+      "email": "serpgodaddyads@radixbi-249015.iam.gserviceaccount.com",
+      "display_name": "serpgodaddyads@radixbi-249015.iam.gserviceaccount.com",
+      "team": "Unknown",
+      "function": "Unknown",
+      "identity_type": "service_account",
+      "total_cost": 2.4439,
+      "query_count": 9278,
+      "cost_per_query": 0.0003,
+      "costly_queries": 0,
+      "total_bytes_gb": 507.35
+    },
+    {
+      "month": "2026-03",
+      "email": "vishwanath@radix.email",
+      "display_name": "vishwanath@radix.email",
+      "team": "Unknown",
+      "function": "Unknown",
+      "identity_type": "human",
+      "total_cost": 2.3372,
+      "query_count": 489,
+      "cost_per_query": 0.0048,
+      "costly_queries": 0,
+      "total_bytes_gb": 478.24
     },
     {
       "month": "2026-03",
@@ -4726,11 +4725,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 1.5889,
-      "query_count": 175,
+      "total_cost": 1.9449,
+      "query_count": 214,
       "cost_per_query": 0.0091,
       "costly_queries": 0,
-      "total_bytes_gb": 325.96
+      "total_bytes_gb": 398.94
     },
     {
       "month": "2026-03",
@@ -4739,37 +4738,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 1.1902,
-      "query_count": 1480,
+      "total_cost": 1.2973,
+      "query_count": 1686,
       "cost_per_query": 0.0008,
       "costly_queries": 0,
-      "total_bytes_gb": 253.75
-    },
-    {
-      "month": "2026-03",
-      "email": "anu@radix.email",
-      "display_name": "anu@radix.email",
-      "team": "Unknown",
-      "function": "Unknown",
-      "identity_type": "human",
-      "total_cost": 0.6834,
-      "query_count": 108,
-      "cost_per_query": 0.0063,
-      "costly_queries": 0,
-      "total_bytes_gb": 140.08
-    },
-    {
-      "month": "2026-03",
-      "email": "parag@radix.email",
-      "display_name": "parag@radix.email",
-      "team": "Unknown",
-      "function": "Unknown",
-      "identity_type": "human",
-      "total_cost": 0.5743,
-      "query_count": 862,
-      "cost_per_query": 0.0007,
-      "costly_queries": 0,
-      "total_bytes_gb": 118.67
+      "total_bytes_gb": 277.2
     },
     {
       "month": "2026-03",
@@ -4778,24 +4751,37 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 0.5601,
-      "query_count": 624,
-      "cost_per_query": 0.0009,
+      "total_cost": 0.9039,
+      "query_count": 915,
+      "cost_per_query": 0.001,
       "costly_queries": 0,
-      "total_bytes_gb": 212.48
+      "total_bytes_gb": 344.73
     },
     {
       "month": "2026-03",
-      "email": "rohan@radix.email",
-      "display_name": "rohan@radix.email",
+      "email": "parag@radix.email",
+      "display_name": "parag@radix.email",
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "human",
-      "total_cost": 0.4311,
-      "query_count": 125,
-      "cost_per_query": 0.0034,
+      "total_cost": 0.8344,
+      "query_count": 1085,
+      "cost_per_query": 0.0008,
       "costly_queries": 0,
-      "total_bytes_gb": 88.44
+      "total_bytes_gb": 172.17
+    },
+    {
+      "month": "2026-03",
+      "email": "anu@radix.email",
+      "display_name": "anu@radix.email",
+      "team": "Unknown",
+      "function": "Unknown",
+      "identity_type": "human",
+      "total_cost": 0.8334,
+      "query_count": 120,
+      "cost_per_query": 0.0069,
+      "costly_queries": 0,
+      "total_bytes_gb": 170.8
     },
     {
       "month": "2026-03",
@@ -4804,11 +4790,24 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 0.423,
-      "query_count": 33,
-      "cost_per_query": 0.0128,
+      "total_cost": 0.5409,
+      "query_count": 44,
+      "cost_per_query": 0.0123,
       "costly_queries": 0,
-      "total_bytes_gb": 86.66
+      "total_bytes_gb": 110.79
+    },
+    {
+      "month": "2026-03",
+      "email": "rohan@radix.email",
+      "display_name": "rohan@radix.email",
+      "team": "Unknown",
+      "function": "Unknown",
+      "identity_type": "human",
+      "total_cost": 0.4318,
+      "query_count": 146,
+      "cost_per_query": 0.003,
+      "costly_queries": 0,
+      "total_bytes_gb": 88.6
     },
     {
       "month": "2026-03",
@@ -4817,11 +4816,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 0.3706,
-      "query_count": 176,
-      "cost_per_query": 0.0021,
+      "total_cost": 0.3758,
+      "query_count": 204,
+      "cost_per_query": 0.0018,
       "costly_queries": 0,
-      "total_bytes_gb": 76.88
+      "total_bytes_gb": 78.2
     },
     {
       "month": "2026-03",
@@ -4831,23 +4830,10 @@ D = {
       "function": "Unknown",
       "identity_type": "service_account",
       "total_cost": 0.3221,
-      "query_count": 118,
-      "cost_per_query": 0.0027,
+      "query_count": 311,
+      "cost_per_query": 0.001,
       "costly_queries": 0,
-      "total_bytes_gb": 66.31
-    },
-    {
-      "month": "2026-03",
-      "email": "abhijeet@radix.email",
-      "display_name": "abhijeet@radix.email",
-      "team": "Unknown",
-      "function": "Unknown",
-      "identity_type": "human",
-      "total_cost": 0.2351,
-      "query_count": 53,
-      "cost_per_query": 0.0044,
-      "costly_queries": 0,
-      "total_bytes_gb": 48.1
+      "total_bytes_gb": 66.74
     },
     {
       "month": "2026-03",
@@ -4856,11 +4842,24 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 0.1524,
-      "query_count": 15,
-      "cost_per_query": 0.0102,
+      "total_cost": 0.2663,
+      "query_count": 29,
+      "cost_per_query": 0.0092,
       "costly_queries": 0,
-      "total_bytes_gb": 31.18
+      "total_bytes_gb": 54.47
+    },
+    {
+      "month": "2026-03",
+      "email": "abhijeet@radix.email",
+      "display_name": "abhijeet@radix.email",
+      "team": "Unknown",
+      "function": "Unknown",
+      "identity_type": "human",
+      "total_cost": 0.2559,
+      "query_count": 61,
+      "cost_per_query": 0.0042,
+      "costly_queries": 0,
+      "total_bytes_gb": 52.3
     },
     {
       "month": "2026-03",
@@ -4883,10 +4882,36 @@ D = {
       "function": "Unknown",
       "identity_type": "human",
       "total_cost": 0.1458,
-      "query_count": 59,
-      "cost_per_query": 0.0025,
+      "query_count": 68,
+      "cost_per_query": 0.0021,
       "costly_queries": 0,
       "total_bytes_gb": 29.89
+    },
+    {
+      "month": "2026-03",
+      "email": "dnsmonitoring@radixbi-249015.iam.gserviceaccount.com",
+      "display_name": "dnsmonitoring@radixbi-249015.iam.gserviceaccount.com",
+      "team": "Unknown",
+      "function": "Unknown",
+      "identity_type": "service_account",
+      "total_cost": 0.1342,
+      "query_count": 381,
+      "cost_per_query": 0.0004,
+      "costly_queries": 0,
+      "total_bytes_gb": 27.51
+    },
+    {
+      "month": "2026-03",
+      "email": "chauhanv@radix.email",
+      "display_name": "chauhanv@radix.email",
+      "team": "Unknown",
+      "function": "Unknown",
+      "identity_type": "human",
+      "total_cost": 0.1341,
+      "query_count": 5854,
+      "cost_per_query": 0.0,
+      "costly_queries": 0,
+      "total_bytes_gb": 33.67
     },
     {
       "month": "2026-03",
@@ -4896,36 +4921,10 @@ D = {
       "function": "Unknown",
       "identity_type": "human",
       "total_cost": 0.1112,
-      "query_count": 513,
+      "query_count": 619,
       "cost_per_query": 0.0002,
       "costly_queries": 0,
-      "total_bytes_gb": 23.25
-    },
-    {
-      "month": "2026-03",
-      "email": "chauhanv@radix.email",
-      "display_name": "chauhanv@radix.email",
-      "team": "Unknown",
-      "function": "Unknown",
-      "identity_type": "human",
-      "total_cost": 0.1066,
-      "query_count": 4682,
-      "cost_per_query": 0.0,
-      "costly_queries": 0,
-      "total_bytes_gb": 27.6
-    },
-    {
-      "month": "2026-03",
-      "email": "dnsmonitoring@radixbi-249015.iam.gserviceaccount.com",
-      "display_name": "dnsmonitoring@radixbi-249015.iam.gserviceaccount.com",
-      "team": "Unknown",
-      "function": "Unknown",
-      "identity_type": "service_account",
-      "total_cost": 0.1046,
-      "query_count": 305,
-      "cost_per_query": 0.0003,
-      "costly_queries": 0,
-      "total_bytes_gb": 21.43
+      "total_bytes_gb": 23.31
     },
     {
       "month": "2026-03",
@@ -4934,11 +4933,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 0.0541,
-      "query_count": 52,
+      "total_cost": 0.0669,
+      "query_count": 64,
       "cost_per_query": 0.001,
       "costly_queries": 0,
-      "total_bytes_gb": 11.08
+      "total_bytes_gb": 13.7
     },
     {
       "month": "2026-03",
@@ -4947,11 +4946,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "human",
-      "total_cost": 0.048,
-      "query_count": 850,
+      "total_cost": 0.0597,
+      "query_count": 1062,
       "cost_per_query": 0.0001,
       "costly_queries": 0,
-      "total_bytes_gb": 11.15
+      "total_bytes_gb": 13.89
     },
     {
       "month": "2026-03",
@@ -4973,11 +4972,11 @@ D = {
       "team": "Unknown",
       "function": "Unknown",
       "identity_type": "service_account",
-      "total_cost": 0.0105,
-      "query_count": 26,
-      "cost_per_query": 0.0004,
+      "total_cost": 0.0147,
+      "query_count": 32,
+      "cost_per_query": 0.0005,
       "costly_queries": 0,
-      "total_bytes_gb": 2.2
+      "total_bytes_gb": 3.08
     },
     {
       "month": "2026-03",
@@ -4987,10 +4986,10 @@ D = {
       "function": "Unknown",
       "identity_type": "service_account",
       "total_cost": 0.0,
-      "query_count": 1192,
+      "query_count": 1484,
       "cost_per_query": 0.0,
       "costly_queries": 0,
-      "total_bytes_gb": 969.31
+      "total_bytes_gb": 1175.61
     },
     {
       "month": "2026-03",
@@ -5000,7 +4999,7 @@ D = {
       "function": "Unknown",
       "identity_type": "service_account",
       "total_cost": 0.0,
-      "query_count": 52,
+      "query_count": 64,
       "cost_per_query": 0.0,
       "costly_queries": 0,
       "total_bytes_gb": 0.0
@@ -5013,10 +5012,10 @@ D = {
       "function": "Unknown",
       "identity_type": "service_account",
       "total_cost": 0.0,
-      "query_count": 134,
+      "query_count": 167,
       "cost_per_query": 0.0,
       "costly_queries": 0,
-      "total_bytes_gb": 0.24
+      "total_bytes_gb": 0.3
     },
     {
       "month": "2026-03",
@@ -5026,10 +5025,10 @@ D = {
       "function": "Unknown",
       "identity_type": "service_account",
       "total_cost": 0.0,
-      "query_count": 24,
+      "query_count": 30,
       "cost_per_query": 0.0,
       "costly_queries": 0,
-      "total_bytes_gb": 0.76
+      "total_bytes_gb": 0.87
     },
     {
       "month": "2026-03",
@@ -5039,10 +5038,10 @@ D = {
       "function": "Unknown",
       "identity_type": "service_account",
       "total_cost": 0.0,
-      "query_count": 52,
+      "query_count": 64,
       "cost_per_query": 0.0,
       "costly_queries": 0,
-      "total_bytes_gb": 0.23
+      "total_bytes_gb": 0.25
     },
     {
       "month": "2026-03",
@@ -5052,10 +5051,10 @@ D = {
       "function": "Unknown",
       "identity_type": "service_account",
       "total_cost": 0.0,
-      "query_count": 391,
+      "query_count": 486,
       "cost_per_query": 0.0,
       "costly_queries": 0,
-      "total_bytes_gb": 0.12
+      "total_bytes_gb": 0.15
     },
     {
       "month": "2026-03",
@@ -5078,7 +5077,7 @@ D = {
       "function": "Unknown",
       "identity_type": "service_account",
       "total_cost": 0.0,
-      "query_count": 2352,
+      "query_count": 3062,
       "cost_per_query": 0.0,
       "costly_queries": 0,
       "total_bytes_gb": 0.0
@@ -5097,7 +5096,7 @@ D = {
       "total_bytes_gb": 0.0
     }
   ],
-  "total_potential_savings": 1397.08
+  "total_potential_savings": 1363.55
 };
 document.getElementById('refresh-dot').classList.remove('stale');
 document.getElementById('refresh-label').textContent = 'Data as of 2026-03';
